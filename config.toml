@@ -1,4 +1,4 @@
-baseURL = "http://techgarden.alphasmanifesto.com/"
+baseURL = "https://techgarden.alphasmanifesto.com/"
 languageCode = "en-us"
 googleAnalytics = ""
 pygmentsUseClasses = true
