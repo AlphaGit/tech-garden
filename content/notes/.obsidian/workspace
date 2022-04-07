@@ -1,0 +1,96 @@
+{
+  "main": {
+    "id": "16996497d02d6a11",
+    "type": "split",
+    "children": [
+      {
+        "id": "4b8f53d08bd08ab2",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "obsidian.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "68e2a39e31a13b47",
+    "type": "split",
+    "children": [
+      {
+        "id": "4ece7c9d3fdedd23",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5321c66360dc238c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "8c4a5435389c3949",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fe22b01dfb11dd42",
+    "type": "split",
+    "children": [
+      {
+        "id": "6034cd249cf568ae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6a3c4d7842b981a7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "obsidian.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "4b8f53d08bd08ab2",
+  "lastOpenFiles": [
+    "obsidian.md",
+    "config.md",
+    "CJK + Latex Support (测试).md"
+  ]
+}
