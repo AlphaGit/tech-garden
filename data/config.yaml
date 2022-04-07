@@ -1,15 +1,11 @@
-name: Jacky Zhao
+name: Alpha
 enableToc: true
 openToc: false
 enableLinkPreview: true
 enableLatex: true
 description:
-  Host your second brain and digital garden for free. Quartz features extremely fast full-text search,
-  Wikilink support, backlinks, local graph, tags, and link previews.
-page_title:
-  "🪴 Quartz 3.2"
+  A black and white figure's knowledge garden.
+page_title: Alpha's Tech Garden
 links:
-  - link_name: Twitter
-    link: https://twitter.com/_jzhao
   - link_name: Github
-    link: https://github.com/jackyzha0
+    link: https://github.com/AlphaGit
