@@ -17,6 +17,7 @@ Try the search!
 - Programming Languages
 	- [CSS](/tags/css)
 	- [JavaScript](/tags/javascript)
+	- [TypeScript](/tags/typescript)
 - Networking
 	- [DNS](/tags/DNS)
 - Security
