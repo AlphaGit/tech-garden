@@ -16,6 +16,7 @@ Try the search!
 - [All Notes](/notes)
 - Programming Languages
 	- [CSS](/tags/css)
+	- [JavaScript](/tags/javascript)
 - Networking
 	- [DNS](/tags/DNS)
 - Security
