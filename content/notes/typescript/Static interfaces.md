@@ -28,7 +28,7 @@ function myFunction (staticClass: StaticClass) {
   staticClass.start();
 }
 
-myFunction(StaticClass);
+myFunction(StaticMembersClass);
 ```
 
 Some more info: https://stackoverflow.com/a/43674389/147507
