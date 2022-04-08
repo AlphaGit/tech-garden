@@ -11,16 +11,14 @@ Because a "blog" feels like it needs to have some research and finished idea beh
 Also, because it's look to see it all in a graph~
 
 ## Some links to navigate
-Try the search, regardless!
+Try the search!
 
 - [All Notes](/notes)
 - Programming Languages
 	- [CSS](/tags/css)
+- Networking
+	- [DNS](/tags/DNS)
 - Security
 	- [SSL](/tags/ssl)
 
-## Pending work
-Pending work for this garden is:
-- [ ] Remove Quartz default pages (after reading them!)
-- [x] Give a nice URL to it, using a custom domain
-- [x] Start filling up some notes!
+This list may be incomplete. Check out [all tags](/tags).
