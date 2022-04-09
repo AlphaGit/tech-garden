@@ -17,6 +17,6 @@ tags:
 - Tools
 	- [[Graph Editor]]
 - Rendering
-	- [[rendering]]
+	- [[Supported GPUS]]
 	- [[Depth of Field]]
 	- [[Rendering workflow]]
