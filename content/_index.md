@@ -13,7 +13,6 @@ Also, because it's look to see it all in a graph~
 ## Some links to navigate
 Try the search!
 
-- [All Notes](/notes)
 - Programming Languages
 	- [CSS](/tags/css)
 	- [JavaScript](/tags/javascript)
@@ -22,5 +21,7 @@ Try the search!
 	- [DNS](/tags/DNS)
 - Security
 	- [SSL](/tags/ssl)
+- Creative tools
+	- [Blender](/tags/blender)
 
-This list may be incomplete. Check out [all tags](/tags).
+This list ~~may be~~ is likely incomplete. Check out [all tags](/tags) or [all Notes](/notes), or just use the search (`Ctrl+K`  or `Cmd+K`).
