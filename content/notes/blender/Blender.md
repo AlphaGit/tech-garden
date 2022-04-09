@@ -18,5 +18,5 @@ tags:
 	- [[Graph Editor]]
 - Rendering
 	- [[rendering]]
-	- [[notes/blender/Depth of Field]]
+	- [[Depth of Field]]
 	- [[Rendering workflow]]
