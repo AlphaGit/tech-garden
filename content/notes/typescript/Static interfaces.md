@@ -10,21 +10,21 @@ In Typescript it is possible to define static interfaces and even reference them
 ```typescript
 interface Instance {}
 
-interface StaticClass {
-  static start();
-  static show();
-  static end();
-}
-
-class StaticMembersClass implements StaticClass {
+interface IStaticClass {
   new (): Instance;
   static start();
   static show();
   static end();
 }
 
+class StaticMembersClass implements IStaticClass {
+  static start() {};
+  static show() {};
+  static end() {};
+}
+
 // in some code
-function myFunction (staticClass: StaticClass) {
+function myFunction (staticClass: IStaticClass) {
   staticClass.start();
 }
 
