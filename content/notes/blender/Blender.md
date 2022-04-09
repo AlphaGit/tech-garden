@@ -11,9 +11,12 @@ tags:
 - [[Meshes]]
 - [[Objects]]
 - [[Keyframes]]
-- [[notes/blender/Animations]]
+- [[Animations]]
 - [[animating]]
 - [[shading]]
+- Tools
+	- [[Graph Editor]]
 - Rendering
 	- [[rendering]]
+	- [[notes/blender/Depth of Field]]
 	- [[Rendering workflow]]

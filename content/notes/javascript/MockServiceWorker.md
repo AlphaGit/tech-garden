@@ -1,7 +1,7 @@
 ---
 title: MockServiceWorker
 tags:
-- javscript
+- javascript
 - testing
 - tools
 ---
