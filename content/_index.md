@@ -21,6 +21,7 @@ Try the search!
 	- [DNS](/tags/DNS)
 - Security
 	- [SSL](/tags/ssl)
+- [File Formats](/tags/formats)
 - Creative tools
 	- [Blender](/tags/blender)
 

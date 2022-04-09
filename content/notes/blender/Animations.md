@@ -11,11 +11,11 @@ Animations are nothing more than the sequential rendering of multiple frames. Th
 The format of an animation can be selected from the [[Scene property sheet]], under the Output set of options. Blender can output an animation in different formats. As of Blender 3.1, these are:
 
 - Image formats
-	- **BMP**: A sequence of [[.bmp]] files.
+	- **BMP**: A sequence of [[BMP]] files.
 	- **Iris**
-	- **PNG**: A sequence of [[.png]] files.
-	- **JPEG**: A secuence of [[.jpg]] files.
-	- **JPEG 2000**: A sequence of [[.jpg]] files.
+	- **PNG**: A sequence of [[PNG]] files.
+	- **JPEG**: A secuence of [[JPEG]] files.
+	- **JPEG 2000**: A sequence of [[JPEG#^a84ce8|JPEG]] files.
 	- **Targa**
 	- **Targa Raw**
 	- **Cineon**
@@ -25,7 +25,7 @@ The format of an animation can be selected from the [[Scene property sheet]], un
 	- **Radiance HDR**
 	- **TIFF**
 - Video formats:
-	- **AVI JPEG**: An [[.avi]] animation where each frame is a [[.jpg]] file.
+	- **AVI JPEG**: An [[AVI]] animation where each frame is a [[JPEG]] file.
 	- **AVI Raw**
 	- **FFmpeg Video**
 
