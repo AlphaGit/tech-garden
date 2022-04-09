@@ -1,5 +1,5 @@
 ---
-title: .jpg
+title: JPEG
 tags:
 - formats
 - jpg
