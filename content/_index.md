@@ -22,6 +22,7 @@ Try the search!
 - Security
 	- [SSL](/tags/ssl)
 - [File Formats](/tags/formats)
+- [CI](/tags/ci)
 - Creative tools
 	- [Blender](/tags/blender)
 
