@@ -1,6 +1,6 @@
 baseURL = "https://techgarden.alphasmanifesto.com/"
 languageCode = "en-us"
-googleAnalytics = ""
+googleAnalytics = "G-P3671K209Z"
 pygmentsUseClasses = true
 relativeURLs = false
 disablePathToLower = true
