@@ -4,6 +4,7 @@ tags:
 - formats
 - jpg
 - jpeg
+- images
 ---
 
 **JPG** stands for "Joint Photographic Experts Group", which is why the extensions for these files will sometimes be `.jpg`  and sometimes `.jpeg`. 
