@@ -13,7 +13,8 @@ tags:
 - [[Keyframes]]
 - [[Animations]]
 - [[animating]]
-- [[shading]]
+- Shading
+	- [[UV Mapping]]
 - Tools
 	- [[Graph Editor]]
 - Rendering
