@@ -25,5 +25,6 @@ Try the search!
 - [CI](/tags/ci)
 - Creative tools
 	- [Blender](/tags/blender)
+- [AI](/tags/ai)
 
 This list ~~may be~~ is likely incomplete. Check out [all tags](/tags) or [all Notes](/notes), or just use the search (`Ctrl+K`  or `Cmd+K`).
