@@ -8,13 +8,13 @@ tags:
 In Typescript it is possible to define static interfaces and even reference them and pass the classes as objects to be used.
 
 ```typescript
-interface Instance {}
+interface IInstance {}
 
 interface IStaticClass {
-  new (): Instance;
-  static start();
-  static show();
-  static end();
+  new(): IInstance;
+  start();
+  show();
+  end();
 }
 
 class StaticMembersClass implements IStaticClass {
