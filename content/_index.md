@@ -24,6 +24,7 @@ This list ~~may be~~ is incomplete. Check out [all tags](/tags) or [all notes](/
 	- [CSS](/tags/css)
 	- [JavaScript](/tags/javascript)
 	- [TypeScript](/tags/typescript)
+	- [Python](/tags/python)
 - Security
 	- [SSL](/tags/ssl)
 
