@@ -14,6 +14,8 @@ Also, because it's look to see it all in a graph~
 This list ~~may be~~ is incomplete. Check out [all tags](/tags) or [all notes](/notes), or just use the search (`Ctrl+K`  or `Cmd+K`).
 
 - [AI](/tags/ai)
+- Cloud
+	- [AWS](/tags/aws)
 - Creative tools
 	- [Blender](/tags/blender)
 - [CI](/tags/ci)
@@ -21,10 +23,11 @@ This list ~~may be~~ is incomplete. Check out [all tags](/tags) or [all notes](/
 - Networking
 	- [DNS](/tags/DNS)
 - Programming Languages
+	- [Command Line](/tags/command line)
 	- [CSS](/tags/css)
 	- [JavaScript](/tags/javascript)
-	- [TypeScript](/tags/typescript)
 	- [Python](/tags/python)
+	- [TypeScript](/tags/typescript)
 - Security
 	- [SSL](/tags/ssl)
-
+- [Tools](/tags/tools)
