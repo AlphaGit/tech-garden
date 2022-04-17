@@ -14,6 +14,7 @@ tags:
 - [[Animations]]
 - [[animating]]
 - Shading
+	- [[Texture Painting]]
 	- [[UV Mapping]]
 - Tools
 	- [[Graph Editor]]
