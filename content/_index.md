@@ -23,7 +23,7 @@ This list ~~may be~~ is incomplete. Check out [all tags](/tags) or [all notes](/
 - Networking
 	- [DNS](/tags/DNS)
 - Programming Languages
-	- [Command Line](/tags/command_line)
+	- [Command Line](/tags/command-line)
 	- [CSS](/tags/css)
 	- [JavaScript](/tags/javascript)
 	- [Python](/tags/python)
