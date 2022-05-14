@@ -11,7 +11,7 @@ Because a "blog" feels like it needs to have some research and finished idea beh
 Also, because it's look to see it all in a graph~
 
 ## Some links to navigate
-This list ~~may be~~ is incomplete. Check out [all tags](/tags) or [all notes](/notes), or just use the search (`Ctrl+K`  or `Cmd+K`).
+This list ~~may be~~ is incomplete. Check out [all tags](/tags) or [all notes](/notes), or better yet: use the search (`Ctrl+K`  or `Cmd+K`).
 
 - [AI](/tags/ai)
 - Cloud
@@ -23,7 +23,7 @@ This list ~~may be~~ is incomplete. Check out [all tags](/tags) or [all notes](/
 - Networking
 	- [DNS](/tags/DNS)
 - Programming Languages
-	- [Command Line](/tags/command line)
+	- [Command Line](/tags/command_line)
 	- [CSS](/tags/css)
 	- [JavaScript](/tags/javascript)
 	- [Python](/tags/python)
