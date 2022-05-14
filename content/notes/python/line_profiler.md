@@ -59,4 +59,4 @@ Usage:
 
 Here's an example without wrapping:
 
-![[line_profiler screenshot.png]]
+![line profiler screenshot](notes/python/line_profiler%20screenshot.png)
