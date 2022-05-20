@@ -1,5 +1,5 @@
 ---
-title: Conference notes: Quickly Creating a Production-Ready API Using FastAPI and Docker…Explained with Memes
+title: "Conference notes: Quickly Creating a Production-Ready API Using FastAPI and Docker…Explained with Memes"
 tags:
 - conference
 - docker
