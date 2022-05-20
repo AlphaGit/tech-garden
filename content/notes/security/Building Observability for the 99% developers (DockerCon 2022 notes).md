@@ -1,13 +1,11 @@
 ---
-title: "Conference notes: Quickly Creating a Production-Ready API Using FastAPI and Docker…Explained with Memes"
+title: Building Observability for the 99% developers (DockerCon 2022 notes)
 tags:
 - conference
 - docker
 - dockercon
-- fastapi
-- python
-- api
-- dockercon2022
+- observability
+- logs
 ---
 
 From: https://docker.events.cube365.net/dockercon/2022/content/Videos/925dcd55-d2ee-4059-92c2-ea493bb7bfa9
