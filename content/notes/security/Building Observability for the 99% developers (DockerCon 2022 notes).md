@@ -4,8 +4,11 @@ tags:
 - conference
 - docker
 - dockercon
+- dockercon2022
 - observability
 - logs
+- security
+- sdlc
 ---
 
 From: https://docker.events.cube365.net/dockercon/2022/content/Videos/925dcd55-d2ee-4059-92c2-ea493bb7bfa9
@@ -43,6 +46,6 @@ Observability gap: the reality of observability is that it's hard for people to 
 Possible solutions with low effort:
 
 - eBPF-based passive traffic listening: drop into a system without requiring coe changes. It doesn't fully solve the problem. Also, might be a LOT of data to work with.
-- Automatic traffic modelling: use static analysis solutions to create correlations between traffic movements. Suggested product: Akita.
+- Automatic traffic modelling: use static analysis solutions to create correlations between traffic movements. Suggested product: [[Akita]].
 	- It generates suggestions, changes, warnings.
 

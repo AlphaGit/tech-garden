@@ -6,6 +6,8 @@ tags:
 - python
 ---
 
+## Snippets
+
 Check all available versions of a package:
 
 ```bash
