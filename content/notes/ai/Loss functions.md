@@ -21,19 +21,12 @@ np.mean((y - y_hat) ** 2)
 
 The concept is the same as MSE but using logarithms. Usually used when the target variable has a spread over absolute values (this is, large differences) and MSE might be too unforgiving.
 
-$$
-\begin{align*}
-MSLE
-
-= & \frac{1}{n} \sum^n\left(
+$$\begin{aligned}
+MSLE = & \frac{1}{n} \sum^n\left(
 	\log\left(Y + 1\right) - \log\left(\hat{Y} + 1\right)
-\right)
-^2
-\\
-= & \frac{1}{n} \sum^n
-	\log\left(\frac{Y + 1}{\hat{Y} + 1}\right)
-^2
-\end{align*}$$
+\right) ^2 \\
+= & \frac{1}{n} \sum^n \log\left(\frac{Y + 1}{\hat{Y} + 1}\right)^2
+\end{aligned}$$
 
 ```python
 np.mean((np.log(y + 1) - np.log(y_hat + 1)) ** 2)
