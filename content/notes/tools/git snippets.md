@@ -36,3 +36,7 @@ Useful when you want to try everything with the content of your current state, b
 git checkout -- <file-or-folder-path>
 ```
 
+## Update submodules to the latest branch they're tracking
+```bash
+git submodule update --recursive --remote
+```
