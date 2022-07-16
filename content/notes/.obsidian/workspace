@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "obsidian.md",
+            "file": "tools/QR Codes for Wifi access.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "obsidian.md",
+                "file": "tools/QR Codes for Wifi access.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "4b8f53d08bd08ab2",
   "lastOpenFiles": [
+    "Advertising Technology.md",
     "obsidian.md",
     "config.md",
     "CJK + Latex Support (测试).md"
