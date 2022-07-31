@@ -16,6 +16,7 @@ This list ~~may be~~ is incomplete. Check out [all tags](/tags) or [all notes](/
 - [AI](/tags/ai)
 - Cloud
 	- [AWS](/tags/aws)
+- [Courses](/tags/courses)
 - Creative tools
 	- [Blender](/tags/blender)
 - [CI](/tags/ci)
