@@ -16,4 +16,4 @@ There are three kinds of models:
 
 - [[notes/ai/MIT 6.0002/Optimization models|Optimization models]]
 - Statistical models
-- Simulation models
+- [[notes/ai/MIT 6.0002/Simulation models|Simulation models]]
