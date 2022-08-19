@@ -22,3 +22,29 @@ res = my_expensive_function(2, 2, ttl_hash=get_ttl_hash())
 ```
 
 ([Source](https://stackoverflow.com/a/55900800/147507))
+
+A more elegant version that does not require external parameters ([source](https://realpython.com/lru-cache-python/)):
+
+```python
+from functools import lru_cache, wraps
+from datetime import datetime, timedelta
+
+def timed_lru_cache(seconds: int, maxsize: int = 128):
+    def wrapper_cache(func):
+        func = lru_cache(maxsize=maxsize)(func)
+        func.lifetime = timedelta(seconds=seconds)
+        func.expiration = datetime.utcnow() + func.lifetime
+
+        @wraps(func)
+        def wrapped_func(*args, **kwargs):
+            if datetime.utcnow() >= func.expiration:
+                func.cache_clear()
+                func.expiration = datetime.utcnow() + func.lifetime
+
+            return func(*args, **kwargs)
+
+        return wrapped_func
+
+    return wrapper_cache
+```
+

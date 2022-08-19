@@ -60,3 +60,17 @@ Usage:
 Here's an example without wrapping:
 
 ![line profiler screenshot](notes/python/line_profiler%20screenshot.png)
+
+---
+
+It can even be run in Jupyter notebooks with the use of the `%line_profiler` extension ([source](https://stackoverflow.com/a/49824047/147507)):
+
+```python
+!pip install line_profiler
+%load_ext line_profiler
+
+def test_function():
+    # some intense calculations
+
+%lprun -f test_function test_function()
+```
