@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "tools/QR Codes for Wifi access.md",
+            "file": "ai/MIT 6.0002/MIT 6.0002.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tools/QR Codes for Wifi access.md",
+                "file": "ai/MIT 6.0002/MIT 6.0002.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "4b8f53d08bd08ab2",
   "lastOpenFiles": [
+    "tools/QR Codes for Wifi access.md",
     "Advertising Technology.md",
     "obsidian.md",
     "config.md",

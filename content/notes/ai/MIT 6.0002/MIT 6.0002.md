@@ -148,10 +148,67 @@ Biased-random walk: random walk where the choices are not all balanced.
 
 Sanity check: run the simulation on known results, to validate that the results are the ones that we'd expect. A wrong result proves the simualtion is wrong. A right result does not prove the simulation is correct but helps in being hopeful about it.
 
+Another example, a field that transports to a different place, like a wormhole.
+
+```python
+class OddField(Field):
+	def __init__(self, num_holes: int = 1000,
+				 x_range: int = 100, y_range: int = 100):
+		Field.__init__(self)
+		self.wormholes = {}
+		
+		for w in range(num_holes):
+			x = random.randint(-x_range, x_range)
+			y = random.randint(-y_range, y_range)
+			new_x = random.randint(-x_range, x_range)
+			new_y = random.randint(-y_range, y_range)
+			new_location = Location(new_x, new_y)
+			self.wormholes[(x, y)] = new_location
+
+	def move_drunk(self, drunk: Drunk):
+		Field.move_drunk(self, drunk)
+		x = self.drunks[drunk].get_x()
+		y = self.drunks[drunk].get_y()
+		if (x, y) in self.wormholes:
+			self.drunks[drunk] = self.wormholes[(x, y)]
+```
+
+Incremental changes to simulations can help answer different questions. But it's important to understand what's right about the first simulation. 
+
 # Lecture 6: Monte Carlo Simulation
 Source: https://www.youtube.com/watch?v=OgO1gpXSUzU
 
-(Pending)
+Monte Carlo simulation: a method of estimating the value of an unknown quantity, using the principles of inferential statistics.
+
+**Inferential statistics**:
+- **Population**: universe of all possible examples
+- **Examples**: a proper subset of the population
+- A **random sample** tends to exhibit the same properties as the population from which is drawn
+
+These are the principles we applied when testing random walks.
+
+Given a coin, estimate the fraction of heads you would get if you flipped the coin an infinite number of times. It, of course, depends on the evidence that we see in the first flips.
+
+The confidence in our estimate depends on two things: 
+- Size of the sample (100 vs 2)
+- Variance of the sample (all heads vs. 52 heads)
+
+As the variance grows, we need larger samples to have the same degree of confidence.
+
+More simulations (a larger sample) usually drives the variance down, which is why we have a better confidence in the results. This is the Law of Large numebrs:
+
+> In repeated independent tests with the same actual probability $p$ of a particular outcome in each test, the chance that the franction of times that outcome occurs differs from $p$ converges to zero as the number of trials goes to infinity.
+
+The Gambler's Fallacy: people expect that deviations from the expected occur, they will be evened out in the future.
+
+>On August 18th, 1913, at the casino in Monte Carlo, black came up a record twenty-six times in succession \[in roulette]. ... \[There] was a near panicky-rush to bet on red, beggining about the time black had come up a phenomenal fifteen times."
+>-- Huff and Geis, _How to take a chance_
+
+Probability of 26-consecutive blacks: $1/{2^{26}} = 1/67,108,865$
+
+Probability of 26-consecutive blacks when the previous 25 rolls where black: $1/2$, because the events are independent.
+
+Regression to the mean, similar to the glambers fallacy but this one is true: following an extreme event, the following event is likely to be less extreme.
 
 # Lecture 7: Confidence Intervals
 Source: https://www.youtube.com/watch?v=rUxP7TM8-wo
