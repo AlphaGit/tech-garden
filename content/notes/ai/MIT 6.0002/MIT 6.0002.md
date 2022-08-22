@@ -210,10 +210,77 @@ Probability of 26-consecutive blacks when the previous 25 rolls where black: $1/
 
 Regression to the mean, similar to the glambers fallacy but this one is true: following an extreme event, the following event is likely to be less extreme.
 
+When sampling, it's not guaranteed to get perfect accuracy, because it's  always possible to get a "weird" sample that skews the results. How many samples to take before we get a justifiable answer? It depends on the variability and underlying possibilities.
+
+Quantifying variation in data: **Variance**
+
+$$variance(X) = \frac{\sum_{x \in X}(x-\mu)^2}{|X|}$$
+
+$$\sigma(X) = \sqrt{\frac{1}{|X|} \sum_{x \in X} (x-\mu)^2}$$
+
+- The standard deviation ($\sigma(X)$) is just the square root of the variance.
+- Outliers can have a big effect.
+- The standard deviation should aways be considered relative to the mean ($\mu$).
+- $|X|$ is the cardinality (size) of the set, the number of members in the set.
+
+Squaring the distance means that:
+- It doesn't matter the direction of the difference
+- Outliers (big distances) get emphasized.
+
+Aside from providing a single value to describe a probability, it's always better to provide a confidence interval. 
+
+Confidence intervals are calculated through the empirical rule. Given the mean and standard deviations from a dataset:
+- ~68% will be within one standard deviation from the mean.
+- ~95% will be within 1.96 standard deviations from the mean.
+- ~99.7% will be within 3 standard deviations from the mean.
+
+The empirical rule doesn't always work because it makes a couple of assumptions:
+- The mean estimation error is 0, meaning that estimating errors in both sides of the mean is equally likely, not biased to any direction in particular.
+- The distribution of the errors is normal, Gaussian.
+
+Probability distributions capture the notion of relative frequency with which some random variable takes on different values.
+- Discrete: values are drawn from a finite set of values. Example: flipping coins, only heads and tails.
+- Continuous: drawn from a set of reals between two numbers. 
+	- For these, we'll calculate a probability density function. PDF.
+
+PDF: Probability of the random variable lying between two values. We define a curve showing how it works between those.
+
+Normal distributions:
+
+$$P(x) = \frac{1}{\sigma\sqrt{2\pi}}*e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
+
+$$e = \sum_{n=0}^{\infty}\frac{1}{n!}$$
+
+![[notes/ai/MIT 6.0002/assets/gaussian distribution curve.png]]
+
+- Symmetric around the mean
+- Peaks at the mean (the most probably value)
+
+To find the probability of the random value between two values (say, 0 and 1), we can integrate the curve between those two values and we'll find the probability.
+
+![[notes/ai/MIT 6.0002/assets/gaussian distribution, integrated.png]]
+
 # Lecture 7: Confidence Intervals
 Source: https://www.youtube.com/watch?v=rUxP7TM8-wo
 
-(Pending)
+We can generate normal (Gaussian) distributions in Python by using `random.gauss(mean, std)`.
+
+A PDF does not give probabilities, but **densities**. They're derivatives of the CDF (Cumulative Distribution Function). In PDFs, we're mostly interested about the area, and not the values in the curve. 
+
+When we reason about the mean of multiple events, not about the probabilities of a single event, we can call on the Central Limit Theorem, which states:
+
+> Given a sufficiently large sample:
+> - The means of the samples in a set of samples will be approximately normally distributed.
+> - This normal distribution will have a mean close to the mean of the population.
+> - The variance of the sample means will be close to the variance of the population divided by the sample size.
+
+This means that for an event:
+- We can obtain samples (large enough)
+- We can calculate their means
+- The mean of these means --> close to population mean
+- The variance of these means --> close to variance of population / sample size
+
+When simulations close in on a number, with decreasing standard deviations, we don't know for sure about the _statistical true value_, but instead about what our simulation can infer only. A wrong simluation will still give good results, but the value might be wrong. It is why it's important to do a sanity check.
 
 # Lecture 8: Sampling and standard error
 Source: https://www.youtube.com/watch?v=soZv_KKax3E
