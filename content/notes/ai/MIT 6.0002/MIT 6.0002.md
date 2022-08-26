@@ -50,130 +50,8 @@ Source: https://www.youtube.com/watch?v=-1BnXEwHUok
 # Lecture 5: Random Walks
 Source: https://www.youtube.com/watch?v=6wUD_gp5WeE
 
-Random walks is important in many domains, for example, some argue stock market is a random walk, or physical processes (difussion models).
-
-Drunkard's Walk: a drunk person takes a step in a random direction. Is there a relationship between the number of steps he takes and how far away he is from the origin?
-
-Random walk simulation:
-
-```python
-class Location(object):
-	def __init__(self, x: float, y: float):
-		self.x = x
-		self.y = y
-
-	def move(self, delta_x: float, delta_y: float):
-		return Location(self.x + delta_x, self.y + delta_y)
-
-	def get_x():
-		return self.x
-
-	def get_y():
-		return self.y
-
-	def distance_from(self, other: Location) -> float:
-		x_dist = self.x - other.get_x()
-		y_dist = self.y - other.get_y()
-		return (x_dist**2 + y_dist**2)**0.5
-
-class Drunk(object):
-	def __init__(self, name: str):
-		self.name = name
-
-import random
-
-class UsualDrunk(Drunk):
-	""" Walks a random step in any given direction (N/S/E/W). """
-	def take_step(self):
-		step_choices = [(0.0, 1.0), (0.0, -1.0), (1.0, 0.0), (-1.0, 0.0)]
-		return random.choice(step_choices)
-
-class MasochisticDrunk(Drunk):
-	""" Always tries to walk north. """
-	def take_step(self):
-		step_choices = [(0.0, 1.1), (0.0, -0.9), (1.0, 0.0), (-1.0, 0.0)]
-		return random.choice(step_choices)
-
-class Field(object):
-	def __init__(self):
-		self.drunks = {}
-
-	def add_drunk(self, drunk: Drunk, location: Location):
-		if drunk in self.drunks:
-			raise ValueError('Duplicate drunk')
-		else:
-			# drunks need to be inmutable so they can be used as keys
-			# in the dictionary
-			self.drunks[drunk] = location 
-
-	def get_location(self, drunk: Drunk):
-		if drunk not in self.drunks:
-			raise ValueError('Drunk not in field')
-		return self.drunks[drunk]
-
-	def move_drunk(self, drunk: Drunk):
-		if drunk not in self.drunks:
-			raise ValueError('Drunk not in field')
-
-		x_dist, y_dist = drunk.take_step()
-		self.drunks[drunk] = self.drunks[drunk].move(x_dist, y_dist)
-
-# Simulating a single walk:
-def walk(field: Field, drunk: Drunk, num_steps: int):
-	start = field.get_location(drunk)
-	for s in range(num_steps):
-		field.move_drunk(drunk)
-	return start.distance_from(field.get_location(drunk))
-
-def simulate_walks(num_steps: int, num_trials: int, drunk_class):
-	drunk = drunk_class()
-	origin = Location(0, 0)
-	distances = []
-	for t in range(num_trials):
-		f = Field()
-		f.add_drunk(drunk, origin)
-		distances.append(round(walk(f, drunk, num_steps), 1))
-	return distances
-
-def drunk_test(walk_lengths: List[int], num_trials: int, drunk_class):
-	for num_steps in walk_lengths:
-		distances = simulate_walks(num_steps, num_trials, drunk_class)
-		print(drunk_class.__name__, 'random walk of', num_steps, 'steps')
-		print('Mean =', round(sum(distances) / len(distances), 4))
-		print('Max =', max(distances))
-		print('Min =', min(distances))
-```
-
-Biased-random walk: random walk where the choices are not all balanced.
-
-Sanity check: run the simulation on known results, to validate that the results are the ones that we'd expect. A wrong result proves the simualtion is wrong. A right result does not prove the simulation is correct but helps in being hopeful about it.
-
-Another example, a field that transports to a different place, like a wormhole.
-
-```python
-class OddField(Field):
-	def __init__(self, num_holes: int = 1000,
-				 x_range: int = 100, y_range: int = 100):
-		Field.__init__(self)
-		self.wormholes = {}
-		
-		for w in range(num_holes):
-			x = random.randint(-x_range, x_range)
-			y = random.randint(-y_range, y_range)
-			new_x = random.randint(-x_range, x_range)
-			new_y = random.randint(-y_range, y_range)
-			new_location = Location(new_x, new_y)
-			self.wormholes[(x, y)] = new_location
-
-	def move_drunk(self, drunk: Drunk):
-		Field.move_drunk(self, drunk)
-		x = self.drunks[drunk].get_x()
-		y = self.drunks[drunk].get_y()
-		if (x, y) in self.wormholes:
-			self.drunks[drunk] = self.wormholes[(x, y)]
-```
-
-Incremental changes to simulations can help answer different questions. But it's important to understand what's right about the first simulation. 
+- [[notes/ai/MIT 6.0002/Random Walks|Random Walks]]
+- [[notes/ai/MIT 6.0002/Sanity checks|Sanity checks]]
 
 # Lecture 6: Monte Carlo Simulation
 Source: https://www.youtube.com/watch?v=OgO1gpXSUzU
@@ -285,7 +163,68 @@ When simulations close in on a number, with decreasing standard deviations, we d
 # Lecture 8: Sampling and standard error
 Source: https://www.youtube.com/watch?v=soZv_KKax3E
 
-(Pending)
+Inferential statistics: we make inferences about populations by examining one or more random samples drawn from that population.
+
+Monte Carlo: we use lots of random samples and we use them to generate confidence intervals. With the empirical rule we know what the values are of those confidence intervals.
+
+What about when the experiment is difficult to replicate?
+
+Probability sampling: each member of the population has a non-zero probability of being included in a sample.
+Simple random sampling: each member of the population has the same chance of being inluded in the sample. No bias.
+
+Stratified sampling: we partition the population into subgroups, and then take a simple random sample from each subgroup, proportional to the size of the subgroups. This can be used to reduce the needed size of a sample.
+
+Sample without replacement: if you take a sample, the members are not reused for next samples.
+Sampling with replacement: allows you to take the same elements again in the next sample.
+
+Error bars: graphical visualization of the variability of the data. A way to visualize uncertainty.
+
+![[error bars.png]]
+
+When confidence intervals (error bars) overlap, we canot say that the difference is significant. But otherwise, we can concluse that the means are statistically significantly different.
+
+More samples won't help improving the accuracy of the mean/standard deviation.
+
+Larger sample sizes won't help improve the accuracy of the mean but will reduce the standard deviation (improve confidence intervals, making them smaller).
+
+For times where we can only get a sample (like political polls), we can exploit the third aspect of the Central Limit Theorem:
+
+> The variance of the sample means will be close to the variance of the population, divided by the sample size.
+
+This allows us to calculate the _Standard Error of the Mean (SEM or SE)_.
+
+$$SE = \frac{\sigma}{\sqrt{n}}$$
+Where:
+- $\sigma$: Standard deviation of the population
+- $n$, size of the sample
+
+However, this requires us to calculate the standard deviation of the **population**, which is not always possible. In cases, we can use the standard deviation of the sample, if that's all we got.
+
+Skew: measure of asymmetry of a probability distribution.
+
+More skew: more samples required for a good approximation.
+
+To estimate the mean of a population given a single sample, we choose a sample size based upon some estimate of the skew in the population. When you know the size, you choose a random sample from the population, and you compute the mean and standard deviation of that sample, and use it to estimate the standard error. This is an estimate, not the true standard error. Appropriately chosen, can be a good estimation. From it, we can calculate the confidence intervals around the sample mean.
+
+Answering: are 200 samples enough?
+
+```python
+temps = ... # list with the population temperatures
+sampleSize = 200
+numTrials = ... # any number to run this experiment
+popMean = ... # mean of the whole population
+
+numBad = 0
+for t in range(numTrials):
+	sample = random.sample(temps, sampleSize)
+	sampleMean = sum(sample)/sampleSize
+	se = numpy.std(sample)/sampleSize ** 0.5
+	if abs(popMean - sampleMean) > 1.96*se:
+		numBad += 1
+print(f'Fraction outside 95% confidence interval = {numBad/numTrials}')
+```
+
+Because this is a 95% confidence interval, we expect the result to be 0.5 (5%). If it's higher, our sample size is not good enough. If it's lower, our sample size is too conservative ("too good").
 
 # Lecture 9: Understanding Experimental Data
 Source: https://www.youtube.com/watch?v=vIFKGFl1Cn8
