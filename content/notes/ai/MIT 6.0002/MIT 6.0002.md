@@ -56,87 +56,17 @@ Source: https://www.youtube.com/watch?v=6wUD_gp5WeE
 # Lecture 6: Monte Carlo Simulation
 Source: https://www.youtube.com/watch?v=OgO1gpXSUzU
 
-Monte Carlo simulation: a method of estimating the value of an unknown quantity, using the principles of inferential statistics.
-
-**Inferential statistics**:
-- **Population**: universe of all possible examples
-- **Examples**: a proper subset of the population
-- A **random sample** tends to exhibit the same properties as the population from which is drawn
-
-These are the principles we applied when testing random walks.
-
-Given a coin, estimate the fraction of heads you would get if you flipped the coin an infinite number of times. It, of course, depends on the evidence that we see in the first flips.
-
-The confidence in our estimate depends on two things: 
-- Size of the sample (100 vs 2)
-- Variance of the sample (all heads vs. 52 heads)
-
-As the variance grows, we need larger samples to have the same degree of confidence.
-
-More simulations (a larger sample) usually drives the variance down, which is why we have a better confidence in the results. This is the Law of Large numebrs:
-
-> In repeated independent tests with the same actual probability $p$ of a particular outcome in each test, the chance that the franction of times that outcome occurs differs from $p$ converges to zero as the number of trials goes to infinity.
-
-The Gambler's Fallacy: people expect that deviations from the expected occur, they will be evened out in the future.
-
->On August 18th, 1913, at the casino in Monte Carlo, black came up a record twenty-six times in succession \[in roulette]. ... \[There] was a near panicky-rush to bet on red, beggining about the time black had come up a phenomenal fifteen times."
->-- Huff and Geis, _How to take a chance_
-
-Probability of 26-consecutive blacks: $1/{2^{26}} = 1/67,108,865$
-
-Probability of 26-consecutive blacks when the previous 25 rolls where black: $1/2$, because the events are independent.
-
-Regression to the mean, similar to the glambers fallacy but this one is true: following an extreme event, the following event is likely to be less extreme.
-
-When sampling, it's not guaranteed to get perfect accuracy, because it's  always possible to get a "weird" sample that skews the results. How many samples to take before we get a justifiable answer? It depends on the variability and underlying possibilities.
-
-Quantifying variation in data: **Variance**
-
-$$variance(X) = \frac{\sum_{x \in X}(x-\mu)^2}{|X|}$$
-
-$$\sigma(X) = \sqrt{\frac{1}{|X|} \sum_{x \in X} (x-\mu)^2}$$
-
-- The standard deviation ($\sigma(X)$) is just the square root of the variance.
-- Outliers can have a big effect.
-- The standard deviation should aways be considered relative to the mean ($\mu$).
-- $|X|$ is the cardinality (size) of the set, the number of members in the set.
-
-Squaring the distance means that:
-- It doesn't matter the direction of the difference
-- Outliers (big distances) get emphasized.
-
-Aside from providing a single value to describe a probability, it's always better to provide a confidence interval. 
-
-Confidence intervals are calculated through the empirical rule. Given the mean and standard deviations from a dataset:
-- ~68% will be within one standard deviation from the mean.
-- ~95% will be within 1.96 standard deviations from the mean.
-- ~99.7% will be within 3 standard deviations from the mean.
-
-The empirical rule doesn't always work because it makes a couple of assumptions:
-- The mean estimation error is 0, meaning that estimating errors in both sides of the mean is equally likely, not biased to any direction in particular.
-- The distribution of the errors is normal, Gaussian.
-
-Probability distributions capture the notion of relative frequency with which some random variable takes on different values.
-- Discrete: values are drawn from a finite set of values. Example: flipping coins, only heads and tails.
-- Continuous: drawn from a set of reals between two numbers. 
-	- For these, we'll calculate a probability density function. PDF.
-
-PDF: Probability of the random variable lying between two values. We define a curve showing how it works between those.
-
-Normal distributions:
-
-$$P(x) = \frac{1}{\sigma\sqrt{2\pi}}*e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
-
-$$e = \sum_{n=0}^{\infty}\frac{1}{n!}$$
-
-![[notes/ai/MIT 6.0002/assets/gaussian distribution curve.png]]
-
-- Symmetric around the mean
-- Peaks at the mean (the most probably value)
-
-To find the probability of the random value between two values (say, 0 and 1), we can integrate the curve between those two values and we'll find the probability.
-
-![[notes/ai/MIT 6.0002/assets/gaussian distribution, integrated.png]]
+- [[notes/ai/MIT 6.0002/Monte Carlo Simulations|Monte Carlo Simulations]]
+- [[notes/ai/MIT 6.0002/Inferential Statistics|Inferential Statistics]]
+- [[notes/ai/MIT 6.0002/Confidence intervals|Confidence intervals]]
+- [[notes/ai/MIT 6.0002/Law of Large Numbers|Law of Large Numbers]]
+- [[notes/ai/MIT 6.0002/Gambler's Fallacy|Gambler's Fallacy]]
+- [[notes/ai/MIT 6.0002/Regression to the Mean|Regression to the Mean]]
+- [[notes/ai/MIT 6.0002/Variance|Variance]]
+- [[notes/ai/MIT 6.0002/Empirical Rule|Empirical Rule]]
+- [[notes/ai/MIT 6.0002/Probability Distributions|Probability Distributions]]
+- [[notes/ai/MIT 6.0002/Probability Density Function|Probability Density Function]]
+- [[notes/ai/MIT 6.0002/Normal Distribution|Normal Distributions]]
 
 # Lecture 7: Confidence Intervals
 Source: https://www.youtube.com/watch?v=rUxP7TM8-wo
