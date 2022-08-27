@@ -17,3 +17,5 @@ tags:
 - A **random sample** tends to exhibit the same properties as the population from which is drawn
 
 These are the principles we applied when testing [[notes/ai/MIT 6.0002/Random Walks|random walks]].
+
+We make inferences about populations by examining one or more random [[notes/ai/MIT 6.0002/Sampling|samples]] drawn from that population.

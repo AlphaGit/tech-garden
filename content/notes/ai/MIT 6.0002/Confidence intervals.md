@@ -18,3 +18,9 @@ The confidence in our estimate depends on two things:
 - [[notes/ai/MIT 6.0002/Variance|Variance]] of the sample (all heads vs. 52 heads)
 
 As the [[notes/ai/MIT 6.0002/Variance|variance]] grows, we need larger samples to have the same degree of [[notes/ai/MIT 6.0002/Confidence intervals|confidence]].
+
+Error bars: graphical visualization of the variability of the data. A way to visualize uncertainty.
+
+![[error bars.png]]
+
+When confidence intervals (error bars) overlap, we canot say that the difference is significant. But otherwise, we can concluse that the means are statistically significantly different.

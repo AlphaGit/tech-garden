@@ -71,90 +71,20 @@ Source: https://www.youtube.com/watch?v=OgO1gpXSUzU
 # Lecture 7: Confidence Intervals
 Source: https://www.youtube.com/watch?v=rUxP7TM8-wo
 
-We can generate normal (Gaussian) distributions in Python by using `random.gauss(mean, std)`.
-
-A PDF does not give probabilities, but **densities**. They're derivatives of the CDF (Cumulative Distribution Function). In PDFs, we're mostly interested about the area, and not the values in the curve. 
-
-When we reason about the mean of multiple events, not about the probabilities of a single event, we can call on the Central Limit Theorem, which states:
-
-> Given a sufficiently large sample:
-> - The means of the samples in a set of samples will be approximately normally distributed.
-> - This normal distribution will have a mean close to the mean of the population.
-> - The variance of the sample means will be close to the variance of the population divided by the sample size.
-
-This means that for an event:
-- We can obtain samples (large enough)
-- We can calculate their means
-- The mean of these means --> close to population mean
-- The variance of these means --> close to variance of population / sample size
-
-When simulations close in on a number, with decreasing standard deviations, we don't know for sure about the _statistical true value_, but instead about what our simulation can infer only. A wrong simluation will still give good results, but the value might be wrong. It is why it's important to do a sanity check.
+- [[notes/ai/MIT 6.0002/Normal Distribution|Normal Distribution]]
+- [[notes/ai/MIT 6.0002/Probability Density Function|Probability Density Function]]
+- [[notes/ai/MIT 6.0002/Central Limit Theorem|Central Limit Theorem]]
+- [[notes/ai/MIT 6.0002/Sanity checks|Sanity checks]]
 
 # Lecture 8: Sampling and standard error
 Source: https://www.youtube.com/watch?v=soZv_KKax3E
 
-Inferential statistics: we make inferences about populations by examining one or more random samples drawn from that population.
-
-Monte Carlo: we use lots of random samples and we use them to generate confidence intervals. With the empirical rule we know what the values are of those confidence intervals.
-
-What about when the experiment is difficult to replicate?
-
-Probability sampling: each member of the population has a non-zero probability of being included in a sample.
-Simple random sampling: each member of the population has the same chance of being inluded in the sample. No bias.
-
-Stratified sampling: we partition the population into subgroups, and then take a simple random sample from each subgroup, proportional to the size of the subgroups. This can be used to reduce the needed size of a sample.
-
-Sample without replacement: if you take a sample, the members are not reused for next samples.
-Sampling with replacement: allows you to take the same elements again in the next sample.
-
-Error bars: graphical visualization of the variability of the data. A way to visualize uncertainty.
-
-![[error bars.png]]
-
-When confidence intervals (error bars) overlap, we canot say that the difference is significant. But otherwise, we can concluse that the means are statistically significantly different.
-
-More samples won't help improving the accuracy of the mean/standard deviation.
-
-Larger sample sizes won't help improve the accuracy of the mean but will reduce the standard deviation (improve confidence intervals, making them smaller).
-
-For times where we can only get a sample (like political polls), we can exploit the third aspect of the Central Limit Theorem:
-
-> The variance of the sample means will be close to the variance of the population, divided by the sample size.
-
-This allows us to calculate the _Standard Error of the Mean (SEM or SE)_.
-
-$$SE = \frac{\sigma}{\sqrt{n}}$$
-Where:
-- $\sigma$: Standard deviation of the population
-- $n$, size of the sample
-
-However, this requires us to calculate the standard deviation of the **population**, which is not always possible. In cases, we can use the standard deviation of the sample, if that's all we got.
-
-Skew: measure of asymmetry of a probability distribution.
-
-More skew: more samples required for a good approximation.
-
-To estimate the mean of a population given a single sample, we choose a sample size based upon some estimate of the skew in the population. When you know the size, you choose a random sample from the population, and you compute the mean and standard deviation of that sample, and use it to estimate the standard error. This is an estimate, not the true standard error. Appropriately chosen, can be a good estimation. From it, we can calculate the confidence intervals around the sample mean.
-
-Answering: are 200 samples enough?
-
-```python
-temps = ... # list with the population temperatures
-sampleSize = 200
-numTrials = ... # any number to run this experiment
-popMean = ... # mean of the whole population
-
-numBad = 0
-for t in range(numTrials):
-	sample = random.sample(temps, sampleSize)
-	sampleMean = sum(sample)/sampleSize
-	se = numpy.std(sample)/sampleSize ** 0.5
-	if abs(popMean - sampleMean) > 1.96*se:
-		numBad += 1
-print(f'Fraction outside 95% confidence interval = {numBad/numTrials}')
-```
-
-Because this is a 95% confidence interval, we expect the result to be 0.5 (5%). If it's higher, our sample size is not good enough. If it's lower, our sample size is too conservative ("too good").
+- [[notes/ai/MIT 6.0002/Inferential Statistics|Inferential Statistics]]
+- [[notes/ai/MIT 6.0002/Monte Carlo Simulations|Monte Carlo Simulations]]
+- [[notes/ai/MIT 6.0002/Sampling|Sampling]]
+- [[notes/ai/MIT 6.0002/Confidence intervals|Confidence intervals]]
+- [[notes/ai/MIT 6.0002/Standard Error of the Mean|Standard of the Error Mean]]
+- [[notes/ai/MIT 6.0002/Skew|Skew]]
 
 # Lecture 9: Understanding Experimental Data
 Source: https://www.youtube.com/watch?v=vIFKGFl1Cn8
