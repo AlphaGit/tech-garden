@@ -89,7 +89,12 @@ Source: https://www.youtube.com/watch?v=soZv_KKax3E
 # Lecture 9: Understanding Experimental Data
 Source: https://www.youtube.com/watch?v=vIFKGFl1Cn8
 
-(Pending)
+- [[Data]]
+- [[Modelling a spring]]
+- [[Objective Functions]]
+- [[Least Squares Objective Function]]
+- [[Linear regression]]
+- [[Coefficient of Determination]]
 
 # Lecture 10: Understanding Experimental Data (Cont.)
 Source: https://www.youtube.com/watch?v=fQvg-hh9dUw
