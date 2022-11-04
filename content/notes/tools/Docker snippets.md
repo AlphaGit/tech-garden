@@ -5,6 +5,7 @@ tags:
 - docker
 - command line
 - containers
+- snippets
 ---
 
 Useful docker snippets for the delight of every day use.
