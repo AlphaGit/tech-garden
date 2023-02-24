@@ -99,7 +99,11 @@ Source: https://www.youtube.com/watch?v=vIFKGFl1Cn8
 # Lecture 10: Understanding Experimental Data (Cont.)
 Source: https://www.youtube.com/watch?v=fQvg-hh9dUw
 
-(Pending)
+- [[notes/ai/MIT 6.0002/Linear regression|Linear regression]]
+- [[notes/ai/MIT 6.0002/Testing a model|Testing a model]]
+- [[notes/ai/MIT 6.0002/Validation|Validation]]
+- [[notes/ai/MIT 6.0002/How to find the right model|How to find the right model]]
+- [[notes/ai/MIT 6.0002/Cross Validation|Cross Validation]]
 
 # Lecture 11: Introduction to Machine Learning
 Source: https://www.youtube.com/watch?v=h0e2HAPTGF4
