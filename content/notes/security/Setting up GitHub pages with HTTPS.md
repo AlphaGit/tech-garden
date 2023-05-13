@@ -6,6 +6,7 @@ tags:
 - github pages
 - dns
 ---
+
 I had a particular case for this tech garden while setting up [[SSL]]:
 
 - **My domain was not an apex domain.** This means: it was a subdomain. Instead of `alphasmanifest.com`,  I wanted to use `techgarden.alphasmanifesto.com`

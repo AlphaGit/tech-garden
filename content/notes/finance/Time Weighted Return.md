@@ -1,3 +1,11 @@
+---
+title: Time Weighted Return
+tags:
+- finance
+- metrics
+- investments
+---
+
 Method of calculation to account for external flows in a portfolio (deposits, withdrawals). It does so by considering internal timeframes and calculating the return in each timeframe, then compounding them together.
 
 > Suppose that the portfolio is valued immediately after each external flow. The value of the portfolio at the end of each sub-period is adjusted for the external flow which takes place immediately before. External flows into the portfolio are considered positive, and flows out of the portfolio are negative.

@@ -4,6 +4,7 @@ tags:
 - package management
 - pip
 - python
+- snippets
 ---
 
 ## Snippets

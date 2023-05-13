@@ -1,3 +1,11 @@
+---
+title: Python cache
+tags:
+- cache
+- python
+- snippets
+---
+
 `@lru_cache` can be used elegantly to create a cache with a time-to-live, if a time parameter is used to invalidate previous responses:
 
 ```python
