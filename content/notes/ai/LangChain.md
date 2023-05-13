@@ -1,5 +1,5 @@
 ---
-title: LangChain
+title: LangChain 🦜🔗
 tags:
 - ai
 - llm
@@ -49,7 +49,7 @@ It provides:
 - Example Selector: Dynamic selector of examples to include in prompts.
 - Output Parser: intruct the model on how output should be formatted, and parse output into the desired formatting.
 
-## Indexes
+### Indexes
 
 > Indexes refer to ways to structure documents so that LLMs can best interact with them.
 
@@ -72,7 +72,7 @@ It provides:
 
 - Chat Message History: remembers all previous chat interactions.
 
-## Chains
+### Chains
 
 > Chains is an incredibly generic concept which returns to a sequence of modular components (or other chains) combined in a particular way to accomplish a common use case.
 
@@ -97,5 +97,4 @@ It provides:
 - Agents: the language models. Text in, "action + action input" out.
 - Toolkits: set of tools to be used together for a task
 - Agent Executor: logic that orchestrates agents and tools
-
 
