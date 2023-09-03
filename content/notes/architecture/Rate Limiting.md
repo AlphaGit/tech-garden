@@ -4,7 +4,6 @@ tags:
 - rate limiting
 - architecture
 ---
-
 ## Concepts
 
 **Fail Open**: strategy for rate limiters to let all transactions go through when they are not available. It has the benefit of not stopping legitimate requests, but they could overwhelm the underlying system if they suffer an amount of requests bigger than they can handle.
