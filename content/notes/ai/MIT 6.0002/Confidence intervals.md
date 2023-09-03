@@ -21,6 +21,6 @@ As the [[notes/ai/MIT 6.0002/Variance|variance]] grows, we need larger samples t
 
 Error bars: graphical visualization of the variability of the data. A way to visualize uncertainty.
 
-![[error bars.png]]
+![[notes/ai/MIT 6.0002/assets/error bars.png]]
 
 When confidence intervals (error bars) overlap, we canot say that the difference is significant. But otherwise, we can concluse that the means are statistically significantly different.
