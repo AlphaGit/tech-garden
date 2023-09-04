@@ -110,6 +110,8 @@ sudo service jupyter-notebook status
 
 At this point, the jupyter notebook server should be running.
 
+## 5. Setup CUDA
+
 From your own local machine, visit `<ip>:8888`. You should be able to see the notebook server at this point.
 
 ```bash
