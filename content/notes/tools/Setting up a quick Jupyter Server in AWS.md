@@ -1,10 +1,11 @@
 ---
-title: "{{title}}"
+title: Setting up a quick Jupyter Server in AWS
 tags:
   - jupyter
   - aws
   - guides
   - ec2
+  - infrastructure
 ---
 This guide walks through creating a quick instance of CUDA-enabled Jupyter notebook server using AWS EC2. There are better automated ways of doing this (like SageMaker, or Terraform, CDK, docker, etc), but as a quick first approach, this works.
 
