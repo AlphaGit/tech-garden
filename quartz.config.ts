@@ -3,13 +3,14 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "🦨 Alpha's Tech Garden",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: 'google',
+      tagId: "G-P3671K209Z"
     },
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "techgarden.alphasmanifesto.com",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
