@@ -7,8 +7,7 @@ export const sharedPageComponents: SharedLayout = {
   header: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/AlphaGit/tech-garden",
     },
   }),
 }
@@ -37,7 +36,7 @@ export const defaultContentPageLayout: PageLayout = {
         scale: 1.5
       },
       globalGraph: {
-        scale: 1.5
+        scale: 1.0
       }
     }),
     Component.Backlinks(),
@@ -54,6 +53,5 @@ export const defaultListPageLayout: PageLayout = {
     Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer()),
   ],
-  right: [
-  ],
+  right: [],
 }
