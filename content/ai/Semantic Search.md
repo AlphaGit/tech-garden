@@ -13,7 +13,7 @@ tags:
 
 > **Indexing** is done by converting a document’s content to an embeddings vector through a text-to-vector encoder.
 
-![[BBG Semantic Search worklow.png]]
+![[ai/assets/BBG Semantic Search worklow.png]]
 
 > **Querying** relies on encoding incoming queries into vectors, preferably using the same encoder as indexing. These vectors are used to query the vector database. These results are combined with traditional full-text search results and re-ranked for improved relevancy. This combination of semantic and full-text search is referred to as “hybrid search”.
 
