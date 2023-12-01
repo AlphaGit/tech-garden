@@ -19,6 +19,6 @@ A type of [[Embeddings|embedding]] for textual data.
 >
 > What’s interesting about this is that it’s not guaranteed that the term “backups” appeared directly in the text of those READMEs. The content is semantically similar to that phrase, but might not be an exact textual match.
 >
-> We can call this [[Semantic Search]].[^EmbeddingsWilson]
+> We can call this [[ai/Semantic Search]].[^EmbeddingsWilson]
 
 [^EmbeddingsWilson]: [Embeddings: what they are and why they matter](https://simonwillison.net/2023/Oct/23/embeddings/), Simon Willson
