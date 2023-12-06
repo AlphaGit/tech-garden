@@ -1,10 +1,10 @@
 ---
 title: Glitch tokens
 tags:
-- ai
-- tokenization
-- llms
-- ml
+  - ai
+  - tokenization
+  - ml
+  - llm
 ---
 
 > A fascinating subset of tokens are what are known as “glitch tokens”.
