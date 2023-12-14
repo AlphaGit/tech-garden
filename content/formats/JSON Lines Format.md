@@ -1,8 +1,9 @@
 ---
 title: JSON Lines Format
 tags:
-- formats
-- json
+  - formats
+  - json
+  - to_complete
 ---
 
 > JSON Lines is a convenient format for storing structured data that may be processed one record at a time.
@@ -20,5 +21,3 @@ Suggestions:
 > - MIME type may be `application/jsonl`
 
 Source: https://jsonlines.org/
-
-#formats #json #ToProcess
