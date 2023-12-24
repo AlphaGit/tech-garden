@@ -10,7 +10,6 @@ tags:
   - ml
   - llm
 ---
-
 Automated system that works as a trainable model, learning the best prompt to operate into a specific LLM for accuracy of a specific task.
 
 Sources:

@@ -7,7 +7,7 @@ tags:
 ---
 >_Semantic Search_ is a search method for surfacing highly relevant results based on the **meaning** of the query, context, and content. It goes beyond simple keyword indexing or filtering. It allows users to find things more naturally and with better support for nuance than highly sophisticated but rigid traditional relevancy methods. In practice, it feels like the difference between asking a real person or talking to a machine.
 
-> Many solutions today rely on _[[ai/Embeddings|document embeddings]]_ - representing meaning as vectors. Since semantic search alone may not provide sufficient relevant hits, traditional full-text search is often used to supplement results. A feedback loop based on user interactions (clickes, likes, etc.) provides input to continuously improve relevancy.
+> Many solutions today rely on _[[Embeddings|document embeddings]]_ - representing meaning as vectors. Since semantic search alone may not provide sufficient relevant hits, traditional full-text search is often used to supplement results. A feedback loop based on user interactions (clickes, likes, etc.) provides input to continuously improve relevancy.
 
 > The key processes are: **indexing**, **querying**, and **tracking**
 
