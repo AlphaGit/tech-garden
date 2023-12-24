@@ -68,15 +68,25 @@ Alternatively, consider multi-query attention, which seems to be similar in prin
 
 Post-training (further) quantization
 
+- [AutoGPTQ](https://github.com/PanQiWei/AutoGPTQ), an LLM quantization package using [[ai/GPTQ|GPTQ]].
+- [GPTQ for LLaMa](https://github.com/qwopqwop200/GPTQ-for-LLaMa) , a 4-bit quantization of [[LLaMA]] using [[ai/GPTQ|GPTQ]]
+
 ### 6. Apply tensor-paralellism
 
 Running the code in multiple devices at the same time will accelerate the inference, at the expense of cost.
 
 Some of results of these examples can be seen at https://github.com/pytorch-labs/gpt-fast
 
+## 7. Try a rewritten/optimized model
+
+There are a few alternatives that claim to be more optimized and faster for inference.
+
+- [ExLlama](https://github.com/turboderp/exllama) as a replacement for [[LLaMA 2]], which uses 4-bit GPTQ weights.
+- [ExLlama v2](https://github.com/turboderp/exllamav2), similar but followup to v1
 ## Sources
 
 - [Accelerating Generative AI with PyTorch II: GPT, Fast](https://pytorch.org/blog/accelerating-generative-ai-2/), PyTorch blog
 - [Towards 100x Speedup: Full Stack Transformer Inference Optimization](https://yaofu.notion.site/Towards-100x-Speedup-Full-Stack-Transformer-Inference-Optimization-43124c3688e14cffaf2f1d6cbdf26c6c), Yao Fu
 - [vLLM: Easy, Fast, and Cheap LLM Serving with PagedAttention](https://blog.vllm.ai/2023/06/20/vllm.html), vLLM Team
 - Chen, Carol. "Transformer Inference Arithmetic", https://kipp.ly/blog/transformer-inference-arithmetic/, 2022.
+- [Extensive LLama.cpp benchmark & more speed on CPU, 7b to 30b, Q2_K, to Q6_K and FP16, X3D, DDR-4000 and DDR-6000](https://www.reddit.com/r/LocalLLaMA/comments/14ilo0t/extensive_llamacpp_benchmark_more_speed_on_cpu_7b/), from  u/Chromix\_ in r/LocalLLaMA, 2023-06-25.
