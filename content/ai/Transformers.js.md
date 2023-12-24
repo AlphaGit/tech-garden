@@ -6,6 +6,7 @@ tags:
   - ml
   - nlp
   - javascript
+  - tools
 ---
 https://huggingface.co/docs/transformers.js/index
 
