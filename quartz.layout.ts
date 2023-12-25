@@ -33,7 +33,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Search(),
     Component.Graph({
       localGraph: {
-        scale: 1.5
+        scale: 1.0
       },
       globalGraph: {
         scale: 1.0
