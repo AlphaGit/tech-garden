@@ -40,3 +40,9 @@ git checkout -- <file-or-folder-path>
 ```bash
 git submodule update --recursive --remote
 ```
+
+## Check references where the `main` branch has been for the past 2 weeks
+
+```bash
+git reflog main@{2.weeks.ago}
+```
