@@ -5,6 +5,7 @@ tags:
   - benchmark
   - ai
   - ml
+  - index
 ---
 - [[MTEB]]
 - [[(Super)GLUE]]

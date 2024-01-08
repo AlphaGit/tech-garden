@@ -7,6 +7,7 @@ tags:
   - ml
   - nlp
   - embedding
+  - papers
 ---
 > MTEB consists of 58 datasets covering 112 languages from 8 embedding tasks: Bitext mining, classification, clustering, pair classification, reranking, retrieval, STS and summarization.
 
