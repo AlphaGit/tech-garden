@@ -3,7 +3,6 @@ title: Cache concepts
 tags:
 - cache
 ---
-
 ## Sharding
 Distributing the keys of the cache in multiple cache instances. There's usually a function that determines which key goes in which instance. (Hashing.)
 
