@@ -5,7 +5,6 @@ tags:
 - llm
 - anthropic
 ---
-
 Claude is Anthropic's LLM service.
 
 Currently supports 100K tokens, corresponding to 75K words, 6 hours of audio.[^100kContext]

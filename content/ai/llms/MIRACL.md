@@ -4,6 +4,7 @@ tags:
   - ai
   - nlp
   - benchmark
+  - papers
 ---
 Making a MIRACL: Multiligual Information Retrieval Across a Continuum of Languages
 Paper: https://arxiv.org/abs/2210.09984

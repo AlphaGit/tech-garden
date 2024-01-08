@@ -5,7 +5,16 @@ tags:
   - theory
   - papers
   - model
+  - index
 ---
+## Embeddings
+
+- [[Word2Vec]]
+- [[GloVe]]
+- [[Embed v3]]
+
+## Explanation
+
 Embeddings turn a piece of content into an array of floating point numbers.
 
 > The key thing about that array is that it will always be the same length, no matter how long the content is. The length is defined by the embedding model you are using.
@@ -41,10 +50,5 @@ Another kind of embedding models are [[Word2Vec]], [[CLIP]].
 > Amelia Wattenberger demonstrated a beautiful example of this in [Getting creative with embeddings](https://wattenberger.com/thoughts/yay-embeddings-math).[^EmbeddingsWilson]
 
 Another interesting usage of embedding models is powering [[Retrieval Augmented Generation]].
-
-## Embeddings
-- [[Word2Vec]]
-- [[GloVe]]
-- [[Embed v3]]
 
 [^EmbeddingsWilson]: [Embeddings: what they are and why they matter](https://simonwillison.net/2023/Oct/23/embeddings/), Simon Willson

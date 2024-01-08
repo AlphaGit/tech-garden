@@ -34,4 +34,5 @@ Example of activation functions:
 - Softmax: $f(X) = \frac{e^{x_i}}{\sum{e^{x_i}}}$
 
 ## Sources
+
 - [Introduction to Activation Functions](https://www.enjoyalgorithms.com/blog/activation-functions-in-neural-networks), EnjoyAlgorithms.com

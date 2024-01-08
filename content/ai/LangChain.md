@@ -5,26 +5,21 @@ tags:
 - llm
 - framework
 ---
-
 ## Introduction
 
-> LangChain is a framework for developing applications powered by language models.
+> LangChain is a framework for developing applications powered by language models.[^docs]
 
 It allows to:
 
 > 1.  Be data-aware: connect a language model to other sources of data
-> 2.  Be agentic: Allow a language model to interact with its environment
+> 2.  Be agentic: Allow a language model to interact with its environment[^docs]
 
 It provides:
 
 > 1. Components: LangChain provides modular abstractions for the components neccessary to work with language models. LangChain also has collections of implementations for all these abstractions.
-> 2. Use-Case Specific Chains: Chains can be thought of as assembling these components in particular ways in order to best accomplish a particular use case.
-
-[Source](https://docs.langchain.com/docs/)
+> 2. Use-Case Specific Chains: Chains can be thought of as assembling these components in particular ways in order to best accomplish a particular use case.[^docs]
 
 ## Components
-
-[Source](https://docs.langchain.com/docs/category/components)
 
 ### Schema
 
@@ -51,9 +46,7 @@ It provides:
 
 ### Indexes
 
-> Indexes refer to ways to structure documents so that LLMs can best interact with them.
-
-[Source](https://docs.langchain.com/docs/components/indexing/)
+> Indexes refer to ways to structure documents so that LLMs can best interact with them.[^indexes]
 
 - Document Loaders: Loading documents from various sources.
 - Text Splitters: Splitting text into smaller chunks.
@@ -66,17 +59,13 @@ It provides:
 >
 > Short term memory generally refers to how to pass data in the context of a singular conversation (generally is previous ChatMessages or summaries of them).
 >
-> Long term memory deals with how to fetch and update information between conversations.
-
-[Source](https://docs.langchain.com/docs/components/memory/)
+> Long term memory deals with how to fetch and update information between conversations.[^memory]
 
 - Chat Message History: remembers all previous chat interactions.
 
 ### Chains
 
-> Chains is an incredibly generic concept which returns to a sequence of modular components (or other chains) combined in a particular way to accomplish a common use case.
-
-[Source](https://docs.langchain.com/docs/components/chains/)
+> Chains is an incredibly generic concept which returns to a sequence of modular components (or other chains) combined in a particular way to accomplish a common use case.[^chains]
 
 - Chain: end-to-end wrapper around multiple components
 - LLMChain: Input variables + PromptTemplate + Model + Optional output parser.
@@ -89,12 +78,16 @@ It provides:
 
 ### Agents
 
-> \[...] there is a “agent” which has access to a suite of tools. Depending on the user input, the agent can then decide which, if any, of these tools to call.
-
-[Source](https://docs.langchain.com/docs/components/agents/)
+> \[...] there is a “agent” which has access to a suite of tools. Depending on the user input, the agent can then decide which, if any, of these tools to call.[^agents]
 
 - Tools: how models interact with other resources. Text in, text out.
 - Agents: the language models. Text in, "action + action input" out.
 - Toolkits: set of tools to be used together for a task
 - Agent Executor: logic that orchestrates agents and tools
 
+[^docs]: [LangChain Docs](https://docs.langchain.com/docs/)
+[^components]: [LangChain Docs: Components](https://docs.langchain.com/docs/category/components)
+[^indexes]: [LangChain Docs: Indexes](https://docs.langchain.com/docs/components/indexing/)
+[^memory]: [LangChain Docs: Memory](https://docs.langchain.com/docs/components/memory/)
+[^chains]: [LangChain Docs: Chains](https://docs.langchain.com/docs/components/chains/)
+[^agents]: [LangChain Docs: Agents](https://docs.langchain.com/docs/components/agents/)
