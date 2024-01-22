@@ -1,11 +1,13 @@
 ---
 title: Extreme Learning Machines
 tags:
-- ai
-- data science
+  - ai
+  - data
+  - science
+  - papers
 ---
 
-Extreme Learning Machines are single hidden-layer feedforeward [[neural networks]]. They are one of the [[neural network]] approaches to timeseries forecasting (opposed to [[statistical timeseries forecasting]]).
+Extreme Learning Machines are single hidden-layer feed-foreward [[neural networks]]. They are one of the [[neural network]] approaches to timeseries forecasting (opposed to [[statistical timeseries forecasting]]).
 
 Original paper by Hung et al, 2004. 
 

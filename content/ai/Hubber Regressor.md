@@ -19,7 +19,8 @@ $$\begin{split}H_{\epsilon}(z) = \begin{cases}
        z^2, & \text {if } |z| < \epsilon, \\
        2\epsilon|z| - \epsilon^2, & \text{otherwise}
 \end{cases}\end{split}$$
-Sources:
+## Sources
+
 - [Hubber Regression](https://scikit-learn.org/stable/modules/linear_model.html#huber-regression), Sci-Kit Learn User Guide
 - [Hubber Regressor](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.HuberRegressor.html), Sci-Kit Documentation
 - [Robust Regression for Machine Learning in Python](https://machinelearningmastery.com/robust-regression-for-machine-learning-in-python/), Machine Learning Mastery

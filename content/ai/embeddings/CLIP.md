@@ -5,8 +5,6 @@ tags:
   - model
   - embedding
 ---
-> My current favorite embedding model is [CLIP](https://openai.com/blog/clip/).
-> 
 > [[CLIP]] is a fascinating model released by [[OpenAI]]—back in January 2021, when they were still doing most things in the open—that can embed both text and images.
 > 
 > Crucially, it embeds them both into the same vector space.

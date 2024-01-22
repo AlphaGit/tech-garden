@@ -4,6 +4,7 @@ tags:
   - links
   - tools
   - troubleshooting
+  - macOS
 ---
 https://www.osstatus.com/
 
