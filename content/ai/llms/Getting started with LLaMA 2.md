@@ -5,6 +5,7 @@ tags:
   - ai
   - nlp
   - model
+  - llm
 ---
 Guide about getting started with [[LLaMA 2]], from Meta themselves.
 

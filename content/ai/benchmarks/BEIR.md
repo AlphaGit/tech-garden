@@ -4,6 +4,7 @@ tags:
   - nlp
   - benchmark
   - ai
+  - papers
 ---
 Benchmark for Zero-shot evaluation of Information Retrieval Models
 
