@@ -4,6 +4,11 @@ tags:
   - cache
   - architecture
 ---
+## Caching
+
+Caching is the process of storing copies of files in a temporary storage location, known as a cache. The temporary storage location is faster to access than the underlying slower storage layer. The primary goal of caching is to increase data retrieval performance by reducing the need to access the underlying slower storage layer.
+
+When an order comes through and the food item already exists in the oven, this is called a **cache hit**. When it doesn’t exist, this is a **cache miss**. The success of a cache is quantified by the cache hit ratio, calculated as the number of cache hits divided by the total number of cache requests.
 ## Sharding
 
 Distributing the keys of the cache in multiple cache instances. There's usually a function that determines which key goes in which instance. (Hashing.)
@@ -88,3 +93,4 @@ Random Replacement (RR) selects a random item for eviction when the cache is ful
 
 - [EP93: Is Passkey Shaping a Passwordless Future?](https://blog.bytebytego.com/p/ep93-is-passkey-shaping-a-passwordless), ByteByteGo Blog
 - [Caching Policies and Algorithms Explained Simply - SWE Quiz](https://www.swequiz.com/learn/caching-strategies-and-algorithms)
+- [A Crash Course on Caching Fundamentals - SWE Quiz](https://www.swequiz.com/learn/caching-fundamentals)
