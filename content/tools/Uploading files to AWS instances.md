@@ -1,8 +1,8 @@
 ---
 title: Uploading files to AWS instances
 tags:
-- aws
-- command line
+  - aws
+  - command_line
 ---
 
 ```bash

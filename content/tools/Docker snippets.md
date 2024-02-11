@@ -1,11 +1,11 @@
 ---
 title: Docker snippets
 tags:
-- tools
-- docker
-- command line
-- containers
-- snippets
+  - tools
+  - docker
+  - containers
+  - snippets
+  - command_line
 ---
 
 Useful docker snippets for the delight of every day use.

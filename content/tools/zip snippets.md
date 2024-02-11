@@ -1,10 +1,10 @@
 ---
 title: zip snippets
 tags:
-- zip
-- command line
-- unix
-- snippets
+  - zip
+  - unix
+  - snippets
+  - command_line
 ---
 
 Compressing a directory recursively but leaving some files/directories aside ([source](https://superuser.com/a/312302)):

@@ -1,9 +1,9 @@
 ---
 title: curl
 tags:
-- tools
-- unix
-- command line
+  - tools
+  - unix
+  - command_line
 ---
 
 **curl** is an amazing tool to perform HTTP calls.

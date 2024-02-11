@@ -1,9 +1,9 @@
 ---
 title: iterm2 notifications
 tags:
-- tools
-- automation
-- command line
+  - tools
+  - automation
+  - command_line
 ---
 
 We can get different triggers for post notifications when certain events happen in iterm2.

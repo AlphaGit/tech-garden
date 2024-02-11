@@ -1,10 +1,10 @@
 ---
 title: Command line snippets
 tags:
-- command line
-- snippets
-- bash
-- zsh
+  - snippets
+  - bash
+  - zsh
+  - command_line
 ---
 
 ## Delete files smaller than a certain size

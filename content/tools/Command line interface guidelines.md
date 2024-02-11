@@ -1,0 +1,90 @@
+---
+title: Command line interface guidelines
+tags:
+  - command_line
+  - guidelines
+---
+- Basics
+	- Use a command-line argument parsing library where you can.
+	- Return zero exit code on success, non-zero on failure.
+	- Send output to `stdout`.
+	- Send error messaging to `stderr`, (not to `stdout`)
+- Help
+	- Display help text when passed no options, the `-h` flag, or the `--help` flag.
+		- Concise text help by default.
+		- Full help when the flags are passed.
+	- Ignore all other parameters when the flags are passed.
+	- Include examples
+- Documentation
+	- Provide web-based documentation.
+	- Consider providing man pages.
+- Output
+	- Human-readable output is paramount.
+	- If human-readable output breaks machine-readable output, use `--plain` to display output in plain, tabular text format.
+	- Display output as formatted JSON if `--json` is passed.
+	- Display output on success, but keep it brief.
+	- If you change state, tell the user.
+	- Actions crossing the boundary of the program’s internal world should usually be explicit. 
+	- Disable color if your program is not in a terminal or the user requested it.
+- Errors
+	- Catch errors and rewrite them for humans.
+- Arguments and flags
+	- Prefer flags to args.
+	- Have full-length versions of all flags.
+	- Use standard names for flags, if there is a standard. Common ones:
+		- `-a`, `--all`
+		- `-d`, `--debug`
+		- `-f`, `--force`
+		- `--json`
+		- `-h`, `--help`
+		- `--no-input`
+		- `-o`, `--output-file`
+		- `-p`, `--port`
+		- `-q`, `--quiet`
+		- `-u`, `--user`
+		- `-v`, `--version` or `--verbose`
+	- Make the default the right thing for most users. 
+	- Confirm before doing anything dangerous.
+	- If input or output is a file, support `-` to read from `stdin` or write to `stdout`.
+	- If a flag can accept an optional value, allow a special word like “none.” 
+	- If possible, make arguments, flags and subcommands order-independent.
+	- Do not read secrets directly from flags.
+- Interactivity
+	- If `--no-input` is passed, don’t prompt or do anything interactive.
+	- If you’re prompting for a password, don’t print it as the user types.
+	- Let the user escape. 
+- Subcommands
+	- Be consistent across subcommands.
+	- Don’t have ambiguous or similarly-named commands.
+- Robustness
+	- Validate user input.
+	- Responsive is more important than fast.
+	- Show progress if something takes a long time.
+- Future-proofing
+	- Keep changes additive where you can.
+	- Warn before you make a non-additive change.
+- Signals and control characters
+	- If a user hits Ctrl-C (the INT signal), exit as soon as possible.
+- Configuration
+	- Follow the [XDG-spec](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html).
+- Environment variables
+	- Environment variable names must only contain uppercase letters, numbers, and underscores (and mustn’t start with a number).
+	- Check general-purpose environment variables for configuration values when possible. Common ones:
+		- `NO_COLOR`, `FORCE_COLOR`
+		- `DEBUG`
+		- `EDITOR`
+		- `HTTP_PROXY`, `HTTPS_PROXY`, `ALL_PROXY` and `NO_PROXY`
+		- `SHELL`
+		- `TERM`, `TERMINFO` and `TERMCAP`
+		- `TMPDIR`
+		- `HOME`
+		- `PAGER`
+		- `LINES` and `COLUMNS`
+- Naming
+	- Make it a simple, memorable word.
+	- Use only lowercase letters, and dashes if you really need to.
+	- Keep it short.
+
+## Sources
+
+- [Command Line Interface Guidelines](https://clig.dev/)
