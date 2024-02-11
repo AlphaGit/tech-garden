@@ -6,8 +6,7 @@ tags:
   - science
   - papers
 ---
-
-Extreme Learning Machines are single hidden-layer feed-foreward [[neural networks]]. They are one of the [[neural network]] approaches to timeseries forecasting (opposed to [[statistical timeseries forecasting]]).
+Extreme Learning Machines are single hidden-layer feed-forward [[neural networks]]. They are one of the [[neural network]] approaches to timeseries forecasting (opposed to [[statistical timeseries forecasting]]).
 
 Original paper by Hung et al, 2004. 
 
@@ -21,9 +20,10 @@ The training process consists of these steps:
 
 In short, with a single shot we can avoid the multi-step process of iterative training and the backpropagation algorithm that is usually used with feed-forward neural networks.
 
-The tuning of the network will mostly be around its hyperparameters:
+The tuning of the network will mostly be around its [[Hyperparameters|hyperparameters]]:
+
 - Hidden layer size
-- Selection of activation function
+- Selection of [[Activation functions|activation function]]
 - Selection of input sources
 - Selection of the distribution for random values used in the initialization step
 

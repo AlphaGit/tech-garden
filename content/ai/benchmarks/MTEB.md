@@ -9,7 +9,7 @@ tags:
   - embedding
   - papers
 ---
-> MTEB consists of 58 datasets covering 112 languages from 8 embedding tasks: Bitext mining, classification, clustering, pair classification, reranking, retrieval, STS and summarization.
+> MTEB consists of 58 datasets covering 112 languages from 8 embedding tasks: Bitext mining, classification, [[clustering]], pair classification, reranking, retrieval, STS and summarization.
 
 ## Tasks
 
@@ -33,7 +33,5 @@ tags:
 Code available at: https://github.com/embeddings-benchmark/mteb
 
 Leaderboard in HuggingFace: https://huggingface.co/spaces/mteb/leaderboard
-
-Other [[NLP Benchmarks]]
 
 [^MTEB]: [MTEB: Massive Text Embedding Benchmark](https://arxiv.org/pdf/2210.07316.pdf)
