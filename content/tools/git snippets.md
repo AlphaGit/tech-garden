@@ -1,10 +1,10 @@
 ---
 title: git snippets
 tags:
-- git
-- tools
-- command line
-- snippets
+  - git
+  - tools
+  - snippets
+  - command_line
 ---
 
 ## Amending changes in a commit without modifying the message

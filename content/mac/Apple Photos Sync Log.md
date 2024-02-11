@@ -1,9 +1,9 @@
 ---
 title: Apple Photos Sync Log
 tags:
-- macOS
-- apple
-- command line
+  - macOS
+  - apple
+  - command_line
 ---
 This command line snippet shows the progress of the internals of the iCloud sync log:
 

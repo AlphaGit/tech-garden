@@ -1,9 +1,9 @@
 ---
 title: Kubectl snippets
 tags:
-- kubernetes
-- command line
-- snippets
+  - kubernetes
+  - snippets
+  - command_line
 ---
 
 For the alias, see my [[dotfiles]] project.
