@@ -63,9 +63,11 @@ prefill = torch.compile(
 ### 4. Improve the attention mechanism
 
 The attention mechanism (that picks the right token based on the changing context) is also a quadratic algorithm. All tokens attend to all tokens, leading to $N^2$ scaling.
-#### 3.1. Use vLLM or paged-attention
+#### 3.1. Use vLLM or paged attention
 
 Both these techniques work as a middle-step between the memory available and the memory required. It's very similar to another level of memory where chunks of it are loaded in the device while the rest of it is paged and kept in a lower level.
+
+[[vLLM]]
 
 #### 3.2. FlashAttention
 
