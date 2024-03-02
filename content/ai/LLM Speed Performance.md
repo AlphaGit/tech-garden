@@ -38,7 +38,9 @@ Increasing the batch size will improve the throughput of the model and uses the 
 > To batch generation, we pass the model multiple sequences at once, generating a completion for each in the same forward pass. This requires the sequences to be padded on either the left or right with filler tokens to equal length. The padding tokens are masked in the attention mask so that they don't influence generation.
 
 This will improve the throughput and improve the use of the hardware but might increase the time to first token.
-### 3. Setup a bigger cache for the pre-fill of the KV-Cache
+### 3. Improve performance of the KV-Cache
+
+#### 3.1. Setup a bigger cache for the pre-fill of the KV-Cache
 
 > KV caching helps with the algorithmic side of LLM slowness—since we're now only passing in a single token on each step, we don't have to redo _everything_ for each new token. However, it doesn't completely banish the problem, since the KV cache still grows in size each step, slowing down the attention calculation. The size of the KV cache can also pose its own, new problem—for example, with a 1,000 token KV cache, even with the smallest GPT-2 there are 18,432,000 values being cached. If each is an fp32, that's almost 74MB of cache, for a single generation, for a comparatively tiny model! (LLMFast)
 
@@ -60,6 +62,22 @@ prefill = torch.compile(
 ) 
 ```
 
+#### 3.2. Alternatively, use a static cache
+
+```python
+from transformers import AutoModelForCausalLM, StaticCache
+device = "cuda"
+
+...
+
+model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-7b-chat-hf", torch_dtype=torch.bfloat16)
+model = model.to(device).eval()
+
+...
+
+model._setup_cache(StaticCache, batch_size, max_cache_len=max_cache_length)
+```
+[^static_kv_cache]
 ### 4. Improve the attention mechanism
 
 The attention mechanism (that picks the right token based on the changing context) is also a quadratic algorithm. All tokens attend to all tokens, leading to $N^2$ scaling.
@@ -181,3 +199,6 @@ There are a few alternatives that claim to be more optimized and faster for infe
 - Chen, Carol. "Transformer Inference Arithmetic", https://kipp.ly/blog/transformer-inference-arithmetic/, 2022.
 - [Extensive LLama.cpp benchmark & more speed on CPU, 7b to 30b, Q2_K, to Q6_K and FP16, X3D, DDR-4000 and DDR-6000](https://www.reddit.com/r/LocalLLaMA/comments/14ilo0t/extensive_llamacpp_benchmark_more_speed_on_cpu_7b/), from  u/Chromix\_ in r/LocalLLaMA, 2023-06-25.
 - LLMFast: [How to make LLMs go fast](https://vgel.me/posts/faster-inference/), Theia @ vgel.me
+
+[^static_kv_cache]: [
+ArthurZucker/static_kv_cache.py](https://gist.github.com/ArthurZucker/af34221def212259b43d55a2811d2dbb)
