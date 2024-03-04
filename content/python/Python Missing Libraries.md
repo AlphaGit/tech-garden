@@ -9,7 +9,7 @@ tags:
 Source: [Martin Heinz](https://martinheinz.dev/blog/96?utm_source=tldrnewsletter)
 
 - [boltons](https://boltons.readthedocs.io/en/latest/)
-	- Supports [[JSON Lines Format]]
+	- Supports [[JSON Lines]]
 	- More iteration tools
 	- Dictionary / map tools
 	- Subprocess management tools
