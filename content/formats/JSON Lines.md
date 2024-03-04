@@ -1,5 +1,5 @@
 ---
-title: JSON Lines Format
+title: JSON Lines
 tags:
   - formats
   - json
@@ -8,16 +8,19 @@ tags:
 
 > JSON Lines is a convenient format for storing structured data that may be processed one record at a time.
 
-Requirements:
+## Requirements
 
 > 1. UTF-8 Encoding
 > 2. Each Line is a Valid JSON Value
 > 3. Line Separator is `'\n'`
 
-Suggestions:
+## Suggestions
 
 > - JSON Lines files may be saved with the file extension `.jsonl`.
 > - Stream compressors like `gzip` or `bzip2` are recommended for saving space, resulting in `.jsonl.gz` or `.jsonl.bz2` files.
 > - MIME type may be `application/jsonl`
 
-Source: https://jsonlines.org/
+## Sources
+
+- [JSON Lines website](https://jsonlines.org/)
+- [GitHub repository](https://github.com/wardi/jsonlines)
