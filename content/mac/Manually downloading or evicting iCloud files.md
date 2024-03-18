@@ -20,7 +20,7 @@ find . -type f -exec brctl evict {} \;
 ```
 [^rakhesh]
 
- `brctl evict` will remove the files from the device.
+`brctl evict` will remove the files from the device.
 
 `brctl download` will download the files to the device.
 

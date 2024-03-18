@@ -128,6 +128,7 @@ which will delegate to [[Flash Attention]] if available.
 Multi-Headed Attention refers to a mechanism where the Attention module repeats computations multiple times in parallel, with each repetition being called an Attention Head. The Attention module splits its $Q$, $K$, and $V$ parameters N-ways, passing each split independently through a separate Head. These similar Attention calculations are then combined to produce a final Attention score, enhancing the Transformer's ability to encode complex information.[^mhadatascience] [^mhapaperswithcode]
 
 Take into consideration that there are multiple implementations and that they have different performance metrics. Check out [a benchmark for them](https://github.com/rasbt/LLMs-from-scratch/blob/main/ch03/02_bonus_efficient-multihead-attention/mha-implementations.ipynb)[^mhabechmark] before choosing one of them. 
+
 ### 5. Quantize the weights
 
 Most of the models are set up with `fp32` (float32), so going down to `fp16` or half precision, will give you 50% savings. [[bfloat16]] ("brain float 16") developed by Google Brain, has better range but worse hardware support.
