@@ -15,11 +15,6 @@ select *
 from test
 where test."value" = 1
 
-insert into test_bkp
-select *
-from test
-where test."value" = 1
-
 -- just confirming that data is there
 select *
 from test_bkp
