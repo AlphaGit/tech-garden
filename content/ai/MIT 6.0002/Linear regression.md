@@ -1,14 +1,21 @@
 ---
-title: Linear Regression
+title: Linear regression
 tags:
-- ai
-- machine learning
-- courses
-- data science
-- computer science
-- mit ocw
-- mit ocw 6.0002
-- probability
+  - ai
+  - machine
+  - learning
+  - courses
+  - data
+  - science
+  - computer
+  - science
+  - mit
+  - ocw
+  - mit
+  - ocw
+  - probability
+date created: 2024-02-09T22:47:26-05:00
+date modified: 2024-12-20T22:00:52-05:00
 ---
 
 We're going to assume that our solution to the model is a polynomial. Since we know that the solution to this relationship is a linear one, it'll be a degree-1 polynomial, a line, of the shape $y = ax + b$. This implies that the solution is to find the right values for $a$ and $b$ that minimizes the objective function.
