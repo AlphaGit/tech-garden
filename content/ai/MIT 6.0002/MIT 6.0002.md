@@ -1,5 +1,5 @@
 ---
-title: "Lecture 1: Introduction, Optimization Problems"
+title: Introduction to Computational Thinking and Data Science
 tags:
   - ai
   - machine
@@ -14,8 +14,10 @@ tags:
   - mit
   - ocw
 date created: 2024-02-09T22:47:26-05:00
-date modified: 2024-12-20T22:06:53-05:00
+date modified: 2024-12-21T11:50:09-05:00
 ---
+
+# Introduction to Computational Thinking and Data Science
 
 Source: https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/
 
