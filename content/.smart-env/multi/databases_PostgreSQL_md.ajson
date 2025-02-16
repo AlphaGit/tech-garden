@@ -1,0 +1,2 @@
+
+"smart_sources:databases/PostgreSQL.md": {"path":"databases/PostgreSQL.md","last_embed":{"hash":null},"embeddings":{},"last_read":{"hash":"cbfba4da0517bb41c283d592dc476b0e7614345cc5aff64d9bafc08587c8509d","at":1739722091721},"class_name":"SmartSource","outlinks":[{"title":"Source","target":"https://stackoverflow.com/a/6405296/147507","line":20}],"last_import":{"mtime":1707536846652,"size":345,"at":0,"hash":"cbfba4da0517bb41c283d592dc476b0e7614345cc5aff64d9bafc08587c8509d"},"blocks":{"#---frontmatter---":[1,7],"#":[9,24]}},

@@ -1,0 +1,2 @@
+
+"smart_sources:ai/LLM Visualization.md": {"path":"ai/LLM Visualization.md","last_embed":{"hash":null},"embeddings":{},"last_read":{"hash":"d018b566933b988f4ac47ca4bac98e6655c51566e373e3d1537520cbd60896d1","at":1739722091724},"class_name":"SmartSource","outlinks":[{"title":"nanoGPT","target":"nanoGPT","line":11},{"title":"transformers","target":"transformers","line":11}],"last_import":{"mtime":1707536846638,"size":344,"at":0,"hash":"d018b566933b988f4ac47ca4bac98e6655c51566e373e3d1537520cbd60896d1"},"blocks":{"#---frontmatter---":[1,8],"#":[9,11]}},
