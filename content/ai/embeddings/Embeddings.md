@@ -12,7 +12,7 @@ tags:
 - [[Word2Vec]]
 - [[GloVe]]
 - [[Embed v3]]
-
+- [[Qwen3]]
 ## Explanation
 
 Embeddings turn a piece of content into an array of floating point numbers.
