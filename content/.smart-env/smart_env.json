@@ -25,9 +25,34 @@
   "smart_view_filter": {
     "render_markdown": true,
     "show_full_path": false,
+    "expanded_view": false,
     "results_limit": "20"
   },
   "excluded_headings": "",
+  "language": "en",
+  "new_user": false,
+  "smart_chat_threads": {
+    "chat_model": {
+      "adapter": "ollama",
+      "ollama": {},
+      "platform_key": "openai"
+    },
+    "active_thread_key": "",
+    "system_prompt": "",
+    "detect_self_referential": true,
+    "review_context": true,
+    "stream": true,
+    "language": "en",
+    "modifier_key_to_send": "shift",
+    "use_tool_calls": true
+  },
+  "smart_notices": {
+    "muted": {
+      "missing_entity": true,
+      "done_import": true
+    }
+  },
+  "version": "",
   "smart_threads": {
     "chat_model": {
       "adapter": "openai",
@@ -39,21 +64,5 @@
       "model_key": "None"
     }
   },
-  "expanded_view": false,
-  "smart_notices": {
-    "muted": {}
-  },
-  "smart_chat_threads": {
-    "active_thread_key": "",
-    "chat_model": {
-      "platform_key": "openai"
-    },
-    "system_prompt": "",
-    "detect_self_referential": true,
-    "review_context": true,
-    "stream": true,
-    "language": "en",
-    "modifier_key_to_send": "shift",
-    "use_tool_calls": true
-  }
+  "expanded_view": false
 }
