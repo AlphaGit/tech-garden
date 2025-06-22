@@ -49,7 +49,9 @@
   "smart_notices": {
     "muted": {
       "missing_entity": true,
-      "done_import": true
+      "done_import": true,
+      "new_version_available": true,
+      "embedding_complete": true
     }
   },
   "version": "",
