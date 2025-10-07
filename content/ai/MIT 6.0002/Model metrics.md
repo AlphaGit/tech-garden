@@ -4,10 +4,9 @@ date created: 2024-12-20T22:06:48-05:00
 date modified: 2024-12-20T22:08:14-05:00
 tags:
   - ai
-  - machine
-  - learning
   - mit
   - ocw
+  - machineLearning
 ---
 During the construction of the model we might need to make design choices about which kinds of error the model will make, like prioritizing minimizing false positives.
 

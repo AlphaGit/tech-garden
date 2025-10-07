@@ -4,10 +4,9 @@ date created: 2024-12-20T22:00:12-05:00
 date modified: 2024-12-20T22:01:05-05:00
 tags:
   - ai
-  - machine
-  - learning
   - mit
   - ocw
+  - machineLearning
 ---
 You could say that all computer programs learn a little. The grade varies on the kind of algorithm. In this case, particularly, we're interested in programs that learn from experience, seeing examples and generalizing from them instead of having to program that generalization ourselves.
 
