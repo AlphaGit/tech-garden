@@ -2,8 +2,6 @@
 title: Introduction to Computational Thinking and Data Science
 tags:
   - ai
-  - machine
-  - learning
   - courses
   - data
   - science
@@ -13,8 +11,11 @@ tags:
   - ocw
   - mit
   - ocw
+  - machineLearning
 date created: 2024-02-09T22:47:26-05:00
-date modified: 2024-12-21T11:50:09-05:00
+date modified: 2025-10-06T21:46:35-04:00
+aliases: [Introduction to Computational Thinking and Data Science]
+linter-yaml-title-alias: Introduction to Computational Thinking and Data Science
 ---
 
 # Introduction to Computational Thinking and Data Science

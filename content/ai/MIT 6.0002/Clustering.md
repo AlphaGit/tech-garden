@@ -5,9 +5,8 @@ date modified: 2024-12-20T22:07:13-05:00
 tags:
   - ai
   - mit
-  - machine
-  - learning
   - ocw
+  - machineLearning
 ---
 Clustering examples into groups (example of [[Supervised-Unsupervised Learning|Unsupervised learning]]):
 - Pick $k$ examples (at random?) as exemplars

@@ -2,8 +2,6 @@
 title: Linear regression
 tags:
   - ai
-  - machine
-  - learning
   - courses
   - data
   - science
@@ -14,6 +12,7 @@ tags:
   - mit
   - ocw
   - probability
+  - machineLearning
 date created: 2024-02-09T22:47:26-05:00
 date modified: 2024-12-20T22:00:52-05:00
 ---

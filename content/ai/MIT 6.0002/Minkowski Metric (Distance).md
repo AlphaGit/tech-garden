@@ -4,10 +4,9 @@ date created: 2024-12-20T22:06:15-05:00
 date modified: 2024-12-20T22:08:03-05:00
 tags:
   - ai
-  - machine
-  - learning
   - mit
   - ocw
+  - machineLearning
 ---
 Minkowski Metric:
 
