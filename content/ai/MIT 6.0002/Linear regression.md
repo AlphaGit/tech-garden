@@ -12,7 +12,7 @@ tags:
   - mit
   - ocw
   - probability
-  - machineLearning
+  - machine_learning
 date created: 2024-02-09T22:47:26-05:00
 date modified: 2024-12-20T22:00:52-05:00
 ---
