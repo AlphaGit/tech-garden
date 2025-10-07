@@ -6,7 +6,7 @@ tags:
   - ai
   - mit
   - ocw
-  - machineLearning
+  - machine_learning
 ---
 Features are the information pieces we can gather from our examples. They never fully describe the situation. Extra features might actually hurt the model as there is the danger of finding sporadic correlations. Or it might generate overfitting, depending on how our process of feature engineering mixes them together to separate instances.
 

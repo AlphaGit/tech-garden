@@ -6,7 +6,7 @@ tags:
   - ai
   - mit
   - ocw
-  - machineLearning
+  - machine_learning
 ---
 Minkowski Metric:
 

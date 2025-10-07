@@ -11,10 +11,11 @@ tags:
   - ocw
   - mit
   - ocw
-  - machineLearning
+  - machine_learning
 date created: 2024-02-09T22:47:26-05:00
 date modified: 2025-10-06T21:46:35-04:00
-aliases: [Introduction to Computational Thinking and Data Science]
+aliases:
+  - Introduction to Computational Thinking and Data Science
 linter-yaml-title-alias: Introduction to Computational Thinking and Data Science
 ---
 
