@@ -1,0 +1,248 @@
+{
+  "main": {
+    "id": "a9e87ba34affa65d",
+    "type": "split",
+    "children": [
+      {
+        "id": "15ef28c64110eaef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0945ff17149ed600",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5ff7510d669682f8",
+    "type": "split",
+    "children": [
+      {
+        "id": "fd859bc5009e9e0d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "58d5130e36d4d8e3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "473e1ba306683979",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#machineLearning  ",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0170d40e9f4903d7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 272.5
+  },
+  "right": {
+    "id": "b9973c7a395964d1",
+    "type": "split",
+    "children": [
+      {
+        "id": "d7dec98abf0cd55d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8a61052c97e8b4f4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ai/MIT 6.0002/MIT 6.0002.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for MIT 6.0002"
+            }
+          },
+          {
+            "id": "0b0899d97b2be258",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ai/MIT 6.0002/MIT 6.0002.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from MIT 6.0002"
+            }
+          },
+          {
+            "id": "4a4b306448028cb4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "ca4beeb0d7a9b616",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "1590bd46ab977bea",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Connections"
+            }
+          },
+          {
+            "id": "3bc5b4d240968f8b",
+            "type": "leaf",
+            "state": {
+              "type": "smart-chat-view",
+              "state": {},
+              "icon": "smart-chat",
+              "title": "Smart Chat"
+            }
+          },
+          {
+            "id": "be76d3f0e533ef4c",
+            "type": "leaf",
+            "state": {
+              "type": "smart-lookup-view",
+              "state": {},
+              "icon": "search",
+              "title": "Smart Lookup"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 363.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "smart-connections:Open: Smart Chat": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Smart Connections: Open random connection": true
+    }
+  },
+  "active": "0945ff17149ed600",
+  "lastOpenFiles": [
+    "canada/The Oath of Citizenship.md",
+    "canada/Who We Are.md",
+    "canada/Rights and Responsibilities of Citizenship.md",
+    "canada/Parliamentary democracy.md",
+    "canada/Parliament.md",
+    "canada/Notice.md",
+    "canada/Message to our readers.md",
+    "canada/Governor general.md",
+    "canada/Federal state.md",
+    "canada/Electoral district.md",
+    "canada/Discover Canada.md",
+    "canada/Constitutional monarchy.md",
+    "canada/Canadian Government Chart.png",
+    "canada/British North America Act.md",
+    "canada/Applying for Citizenship.md",
+    "canada",
+    "Advertising Technology.md",
+    "_index.md",
+    "blender/Animations.md",
+    "blender/Workspaces in Blender.md",
+    "blender/UV Mapping.md",
+    "blender/UV Mapping on Globe.png",
+    "blender/Texture exporting.md",
+    "blender/Texture Painting.md",
+    "blender/Supported GPUS.md",
+    "blender/Smart UV Project options.png",
+    "blender/Render on AWS.md",
+    "blender/Layout workspace.png",
+    "blender/Layout Workspace.md",
+    "blender/Graph Editor.png",
+    "blender/Graph Editor.md",
+    "blender/Graph Editor Handle Types.png",
+    "blender/Editor selector.png",
+    "blender/Depth of field visualization.png",
+    "blender/Depth of Field.md",
+    "blender/Blender output formats.png",
+    "blender/Blender 2.79 supported AMD GPUs.png",
+    "blender",
+    "finance",
+    "templates",
+    "android",
+    "links",
+    "architecture",
+    "ux",
+    "mac",
+    "self-improvement"
+  ]
+}
