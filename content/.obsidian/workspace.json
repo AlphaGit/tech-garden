@@ -11,10 +11,24 @@
             "id": "0945ff17149ed600",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "ai/AI Incident Database.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "AI Incident Database"
             }
           }
         ]
@@ -162,8 +176,8 @@
             "state": {
               "type": "smart-chat-view",
               "state": {},
-              "icon": "smart-chat",
-              "title": "Smart Chat"
+              "icon": "lucide-ghost",
+              "title": "smart-chat-view"
             }
           },
           {
@@ -172,8 +186,8 @@
             "state": {
               "type": "smart-lookup-view",
               "state": {},
-              "icon": "search",
-              "title": "Smart Lookup"
+              "icon": "lucide-ghost",
+              "title": "smart-lookup-view"
             }
           }
         ],
@@ -198,6 +212,7 @@
   },
   "active": "0945ff17149ed600",
   "lastOpenFiles": [
+    "ai/AI Incident Database.md",
     "canada/The Oath of Citizenship.md",
     "canada/Who We Are.md",
     "canada/Rights and Responsibilities of Citizenship.md",
@@ -232,7 +247,6 @@
     "blender/Graph Editor Handle Types.png",
     "blender/Editor selector.png",
     "blender/Depth of field visualization.png",
-    "blender/Depth of Field.md",
     "blender/Blender output formats.png",
     "blender/Blender 2.79 supported AMD GPUs.png",
     "blender",

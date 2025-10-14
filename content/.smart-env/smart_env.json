@@ -58,7 +58,8 @@
       "missing_entity": true,
       "done_import": true,
       "new_version_available": true,
-      "embedding_complete": true
+      "embedding_complete": true,
+      "no_import_queue": true
     }
   },
   "version": "",
