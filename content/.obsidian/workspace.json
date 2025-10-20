@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ai/AI Incident Database.md",
+                "file": "ai/Model Unlearning.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "AI Incident Database"
+              "title": "Model Unlearning"
             }
           }
         ]
@@ -212,16 +212,18 @@
   },
   "active": "0945ff17149ed600",
   "lastOpenFiles": [
-    "ai/AI Incident Database.md",
-    "canada/The Oath of Citizenship.md",
+    "SISA Unlearning.png",
+    "ai/Model Unlearning.md",
+    "ai/benchmarks/LLM Benchmarks.md",
     "canada/Who We Are.md",
+    "canada/The Oath of Citizenship.md",
     "canada/Rights and Responsibilities of Citizenship.md",
     "canada/Parliamentary democracy.md",
     "canada/Parliament.md",
+    "canada/Federal state.md",
     "canada/Notice.md",
     "canada/Message to our readers.md",
     "canada/Governor general.md",
-    "canada/Federal state.md",
     "canada/Electoral district.md",
     "canada/Discover Canada.md",
     "canada/Constitutional monarchy.md",
@@ -231,7 +233,6 @@
     "canada",
     "Advertising Technology.md",
     "_index.md",
-    "blender/Animations.md",
     "blender/Workspaces in Blender.md",
     "blender/UV Mapping.md",
     "blender/UV Mapping on Globe.png",
@@ -243,12 +244,10 @@
     "blender/Layout workspace.png",
     "blender/Layout Workspace.md",
     "blender/Graph Editor.png",
-    "blender/Graph Editor.md",
     "blender/Graph Editor Handle Types.png",
     "blender/Editor selector.png",
     "blender/Depth of field visualization.png",
     "blender/Blender output formats.png",
-    "blender/Blender 2.79 supported AMD GPUs.png",
     "blender",
     "finance",
     "templates",
