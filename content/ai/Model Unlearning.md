@@ -1,7 +1,7 @@
 ---
 title: Model Unlearning
 date created: 2025-10-20T15:48:28-04:00
-date modified: 2025-10-20T16:22:09-04:00
+date modified: 2025-10-20T17:26:23-04:00
 ---
 *Unlearning* is the re-training of a model to remove some knowledge so that it is not capable of responding to it.
 
@@ -20,13 +20,13 @@ It might be motivated by:
 
 **S**harded, **I**solated, **S**liced, and **A**ggregated Training: Trains the original model in smaller composable models through [[Model Ensemble|ensembling]]. The data is partitioned across these individual models.
 ![[SISA Unlearning.png]]
-## Differential Privacy[^4]
+### Differential Privacy[^4]
 
 Applies noise and clips L2 Norm of per-example gradients for specific parts of the data that wants to be unlearned. The great benefit of this is that it provides a quantifiable demonstration of the unlearning happening, and reduces the impact of the model, as long as the differential (called $(\alpha, \beta)-\text{unlearning}$) are kept low enough to show that impact. This demonstrates the distributional closeness between the original model and the unlearned model, which would be (ideally) equivalent.
 
 Liu's article[^2] covers the details of several approaches under differential privacy used for the [[#Unlearning Challenge]].
 
-### Just ask
+### Just asking
 
 Some approaches just ask the model to pretend not to know about a subject with good results.[^6] this can even take the shape of in-context unlearning[^7], so that the model negates the weights of the provided examples. However, this does not impact the model and is not feasible for large datasets where lots of examples need to be unlearned.
 
