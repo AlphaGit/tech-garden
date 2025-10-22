@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "15ef28c64110eaef",
+        "id": "beb86a5998b2cf89",
         "type": "tabs",
         "children": [
           {
-            "id": "0945ff17149ed600",
+            "id": "4c27adebf3b5ec66",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ai/Model Unlearning.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Model Unlearning"
+              "title": "New tab"
             }
           }
         ]
@@ -210,24 +196,22 @@
       "smart-connections:Smart Connections: Open random connection": true
     }
   },
-  "active": "0945ff17149ed600",
+  "active": "4c27adebf3b5ec66",
   "lastOpenFiles": [
-    "SISA Unlearning.png",
-    "ai/Model Unlearning.md",
-    "ai/benchmarks/LLM Benchmarks.md",
+    "ux/Conversation Design Fundamentals Course.md",
     "canada/Who We Are.md",
     "canada/The Oath of Citizenship.md",
     "canada/Rights and Responsibilities of Citizenship.md",
     "canada/Parliamentary democracy.md",
     "canada/Parliament.md",
-    "canada/Federal state.md",
     "canada/Notice.md",
     "canada/Message to our readers.md",
     "canada/Governor general.md",
+    "canada/Federal state.md",
     "canada/Electoral district.md",
+    "canada/Canadian Government Chart.png",
     "canada/Discover Canada.md",
     "canada/Constitutional monarchy.md",
-    "canada/Canadian Government Chart.png",
     "canada/British North America Act.md",
     "canada/Applying for Citizenship.md",
     "canada",
@@ -244,18 +228,21 @@
     "blender/Layout workspace.png",
     "blender/Layout Workspace.md",
     "blender/Graph Editor.png",
+    "blender/Graph Editor.md",
     "blender/Graph Editor Handle Types.png",
     "blender/Editor selector.png",
     "blender/Depth of field visualization.png",
+    "blender/Depth of Field.md",
     "blender/Blender output formats.png",
+    "blender/Blender 2.79 supported AMD GPUs.png",
     "blender",
     "finance",
     "templates",
     "android",
     "links",
+    "VetSource ideas from team.pdf",
     "architecture",
     "ux",
-    "mac",
-    "self-improvement"
+    "mac"
   ]
 }
