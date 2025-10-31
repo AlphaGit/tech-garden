@@ -11,10 +11,24 @@
             "id": "4c27adebf3b5ec66",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "ai/LangGraph.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "LangGraph"
             }
           }
         ]
@@ -198,6 +212,11 @@
   },
   "active": "4c27adebf3b5ec66",
   "lastOpenFiles": [
+    "ai/LangGraphStateMethods.png",
+    "ai/LangGraph.md",
+    "development/javascript/Zod.md",
+    "ai/LangGraphExampleWorkflow.png",
+    "ai/LangChain.md",
     "canada/Applying for Citizenship.md",
     "canada/British North America Act.md",
     "canada/Canadian Government Chart.png",
@@ -220,9 +239,7 @@
     "blender/Depth of field visualization.png",
     "blender/Depth of Field.md",
     "blender/Blender.md",
-    "blender/Blender output formats.png",
     "blender/Blender Marketplaces.md",
-    "blender/Blender 2.79 supported AMD GPUs.png",
     "blender/AutoKeying.md",
     "blender/Animations.md",
     "blender",
@@ -232,10 +249,6 @@
     "ai/llms/Mamba Linear Time Sequencing Modeling with Selective State Spaces.md",
     "ai/llms/LLMs.md",
     "ai/llms/MIRACL.md",
-    "ai/llms/LazyAxolotl.md",
-    "ai/llms/InstructZero.md",
-    "ai/llms/Glitch tokens.md",
-    "ai/llms/Getting started with LLaMA 2.md",
     "ai/MIT 6.0002/assets",
     "ai/llms",
     "ai/embeddings",
