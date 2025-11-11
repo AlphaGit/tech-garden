@@ -1,7 +1,7 @@
 ---
 title: LangGraph
 date created: 2025-10-24T09:12:06-04:00
-date modified: 2025-10-31T16:43:14-04:00
+date modified: 2025-11-11T11:13:47-05:00
 ---
 [[LangGraph]] is part of the suite of [[LangChain]] offering.
 
@@ -321,7 +321,231 @@ graph.invoke(inputs, {
 await graph.invoke(null, config);
 ```
 
+## Memory
 
+Because LLMs have a context limit, LangGraph provides solutions to it through the use of **short-term memory**. There are different approaches:
+
+### Trim Messages
+
+Truncate the first (or last) messages until the token count approaches the specified limit.
+
+```ts
+import { trimMessages } from "@langchain/core/messages";
+
+const callModel = async (state: z.infer<typeof MessagesZodState>) => {
+  const messages = trimMessages(state.messages, {
+    strategy: "last",
+    maxTokens: 128,
+    startOn: "human",
+    endOn: ["human", "tool"],
+  });
+  const response = await model.invoke(messages);
+  return { messages: [response] };
+};
+```
+
+### Delete messages
+
+This just deletes a message from the graph state. When doing so, make sure that the resulting message history still makes sense, so be careful about which messages you are deleting.
+
+```ts
+import { RemoveMessage } from "@langchain/core/messages";
+
+const deleteMessages = (state) => {
+  const messages = state.messages;
+  if (messages.length > 2) {
+    // remove the earliest two messages
+    return {
+      messages: messages
+        .slice(0, 2)
+        .map((m) => new RemoveMessage({ id: m.id })),
+    };
+  }
+};
+```
+
+### Summarize messages
+
+A common approach is to keep a summary of the conversation so far as context that can be reused. LangChain does not provide any particular tool to do so, so instead it can be done by invoking the models to do such work:
+
+```ts
+import { RemoveMessage, HumanMessage } from "@langchain/core/messages";
+
+const summarizeConversation = async (state: z.infer<typeof State>) => {
+  // First, we get any existing summary
+  const summary = state.summary || "";
+
+  // Create our summarization prompt
+  let summaryMessage: string;
+  if (summary) {
+    // A summary already exists
+    summaryMessage =
+      `This is a summary of the conversation to date: ${summary}\n\n` +
+      "Extend the summary by taking into account the new messages above:";
+  } else {
+    summaryMessage = "Create a summary of the conversation above:";
+  }
+
+  // Add prompt to our history
+  const messages = [
+    ...state.messages,
+    new HumanMessage({ content: summaryMessage })
+  ];
+  const response = await model.invoke(messages);
+
+  // Delete all but the 2 most recent messages
+  const deleteMessages = state.messages
+    .slice(0, -2)
+    .map(m => new RemoveMessage({ id: m.id }));
+
+  return {
+    summary: response.content,
+    messages: deleteMessages
+  };
+};
+```
+
+## Subgraphs
+
+Graphs can also be used in other graphs. This can be useful for reusing behaviour, or have multi-agent systems without complexity exploding, or even distribute development. All that needs to be respected is the schemas of the subgraphs at the points of communication.
+
+Subgraphs don't need to have checkpointers specified, but rather they are propagated from the parent graph. They can be specified, however, so that the subgraph has its own memory (useful for multi-agent systems).
+### Invoking subgraph from inside a node
+
+```ts
+const builder = new StateGraph(State)
+  .addNode("node1", async (state) => {
+    const subgraphOutput = await subgraph.invoke({ bar: state.foo });
+    return { foo: subgraphOutput.bar };
+  })
+  .addEdge(START, "node1");
+```
+
+Any of the existing techniques and methods for invoking graphs can be used here.
+
+### Including subgraph as a node
+
+```ts
+// Subgraph
+const subgraphBuilder = new StateGraph(State)
+  .addNode("subgraphNode1", (state) => {
+    return { foo: "hi! " + state.foo };
+  })
+  .addEdge(START, "subgraphNode1");
+
+const subgraph = subgraphBuilder.compile();
+
+// Parent graph
+const builder = new StateGraph(State)
+  .addNode("node1", subgraph)
+  .addEdge(START, "node1");
+```
+
+Notice that in this case, the states schema need to match (or at least, the parent graph state needs to be a superset of the subgraph state).
+
+## Project Structure
+
+This is the recommended project structure for LangGraph projects:
+
+```
+my-app/
+├── src              # all project code lies within here
+│   ├── utils        # optional utilities for your graph
+│   │   ├── tools.ts # tools for your graph
+│   │   ├── nodes.ts # node functions for your graph
+│   │   └── state.ts # state definition of your graph
+│   └── agent.ts     # code for constructing your graph
+├── package.json     # package dependencies
+├── .env             # environment variables
+└── langgraph.json   # configuration file for LangGraph
+```
+
+The `langgraph.json` configuration file is mostly used for deployments. More information [here](https://docs.langchain.com/langsmith/cli#configuration-file).
+
+## Studio
+
+LangGraph has a free-to-use LangGraph Studio. It does require a LangSmith API Key however (currently free).
+
+Quick features:
+
+- See the graph in a visual manner
+- Invoke graph and see results
+- Interact with it, testing changes (will not be persisted)
+- Set interrupts
+- Graph view, chat view
+- Fork, edit state
+- Auto-reloading (when code is modified)
+
+## Testing
+
+Testing can be done through vitest, where basically we invoke the graph and check the results:
+
+```ts
+import { test, expect } from 'vitest';
+import {
+  StateGraph,
+  START,
+  END,
+  MemorySaver,
+} from '@langchain/langgraph';
+import { z } from "zod/v4";
+
+const State = z.object({
+  my_key: z.string(),
+});
+
+const createGraph = () => {
+  return new StateGraph(State)
+    .addNode('node1', (state) => ({ my_key: 'hello from node1' }))
+    .addNode('node2', (state) => ({ my_key: 'hello from node2' }))
+    .addEdge(START, 'node1')
+    .addEdge('node1', 'node2')
+    .addEdge('node2', END);
+};
+
+test('basic agent execution', async () => {
+  const uncompiledGraph = createGraph();
+  const checkpointer = new MemorySaver();
+  const compiledGraph = uncompiledGraph.compile({ checkpointer });
+  const result = await compiledGraph.invoke(
+    { my_key: 'initial_value' },
+    { configurable: { thread_id: '1' } }
+  );
+  expect(result.my_key).toBe('hello from node2');
+});
+```
+
+Alternatively, individual nodes can be tested if invoked independently:
+
+```ts
+test('individual node execution', async () => {
+  const uncompiledGraph = createGraph();
+  // Will be ignored in this example
+  const checkpointer = new MemorySaver();
+  const compiledGraph = uncompiledGraph.compile({ checkpointer });
+  // Only invoke node 1
+  const result = await compiledGraph.nodes['node1'].invoke(
+    { my_key: 'initial_value' },
+  );
+  expect(result.my_key).toBe('hello from node1');
+});
+```
+
+## Agent Chat UI
+
+LangGraph also provides an agent chat UI that can be used to expose a running agent.
+
+```shell
+# Create a new Agent Chat UI project
+npx create-agent-chat-app --project-name my-chat-ui
+cd my-chat-ui
+
+# Install dependencies and start
+pnpm install
+pnpm dev
+
+# Open it up in browser and use the tool
+```
 
 [^1]: [LangChain Docs: Overview](https://docs.langchain.com/oss/javascript/langgraph/overview)
 
@@ -332,3 +556,9 @@ await graph.invoke(null, config);
 [^4]: [LangChain Docs: Task](https://docs.langchain.com/oss/javascript/langgraph/functional-api#task)
 
 [^5]: [LangChain Docs: Interrupts](https://docs.langchain.com/oss/javascript/langgraph/interrupts)
+
+[^6]: [Langchain Docs: Memory](https://docs.langchain.com/oss/javascript/langgraph/add-memory)
+
+[^7]: [LangSmith Studio v2: The Ultimate Agent Development Environment](https://www.youtube.com/watch?v=Mi1gSlHwZLM)
+
+[^8]: [Introducing Agent Chat UI](https://www.youtube.com/watch?v=lInrwVnZ83o)

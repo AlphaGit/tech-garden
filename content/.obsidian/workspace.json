@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "beb86a5998b2cf89",
+        "id": "36ef8f97ee809745",
         "type": "tabs",
         "children": [
           {
-            "id": "4c27adebf3b5ec66",
+            "id": "0c7a0d41bf090efc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ai/LangGraph.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "LangGraph"
+              "title": "New tab"
             }
           }
         ]
@@ -195,7 +181,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 363.5
+    "width": 363.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -210,16 +197,25 @@
       "smart-connections:Smart Connections: Open random connection": true
     }
   },
-  "active": "4c27adebf3b5ec66",
+  "active": "0c7a0d41bf090efc",
   "lastOpenFiles": [
-    "ai/LangGraphStateMethods.png",
     "ai/LangGraph.md",
-    "development/javascript/Zod.md",
-    "ai/LangGraphExampleWorkflow.png",
-    "ai/LangChain.md",
-    "canada/Applying for Citizenship.md",
-    "canada/British North America Act.md",
+    "canada/Who We Are.md",
+    "canada/The Oath of Citizenship.md",
+    "canada/Rights and Responsibilities of Citizenship.md",
+    "canada/Parliamentary democracy.md",
+    "canada/Parliament.md",
+    "canada/Notice.md",
+    "canada/Message to our readers.md",
+    "canada/Governor general.md",
+    "canada/Federal state.md",
+    "canada/Electoral district.md",
+    "canada/Discover Canada.md",
+    "canada/Constitutional monarchy.md",
     "canada/Canadian Government Chart.png",
+    "canada/British North America Act.md",
+    "canada/Applying for Citizenship.md",
+    "canada",
     "Advertising Technology.md",
     "_index.md",
     "blender/Workspaces in Blender.md",
@@ -232,30 +228,22 @@
     "blender/Render on AWS.md",
     "blender/Layout workspace.png",
     "blender/Layout Workspace.md",
-    "blender/Graph Editor Handle Types.png",
     "blender/Graph Editor.png",
     "blender/Graph Editor.md",
+    "blender/Graph Editor Handle Types.png",
     "blender/Editor selector.png",
     "blender/Depth of field visualization.png",
     "blender/Depth of Field.md",
-    "blender/Blender.md",
-    "blender/Blender Marketplaces.md",
-    "blender/AutoKeying.md",
-    "blender/Animations.md",
+    "blender/Blender output formats.png",
+    "blender/Blender 2.79 supported AMD GPUs.png",
     "blender",
-    "android/API Levels and Usage.md",
+    "finance",
+    "templates",
     "android",
-    "ai/llms/vLLM.md",
-    "ai/llms/Mamba Linear Time Sequencing Modeling with Selective State Spaces.md",
-    "ai/llms/LLMs.md",
-    "ai/llms/MIRACL.md",
-    "ai/MIT 6.0002/assets",
-    "ai/llms",
-    "ai/embeddings",
-    "ai/benchmarks",
-    "ai/assets",
-    "ai/MIT 6.0002",
-    "ai",
-    "VetSource ideas from team.pdf"
+    "links",
+    "architecture",
+    "ux",
+    "mac",
+    "self-improvement"
   ]
 }
