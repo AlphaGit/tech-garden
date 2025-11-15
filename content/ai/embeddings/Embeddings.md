@@ -27,9 +27,9 @@ Example of usage:
 
 > I currently have 472 articles on my site. I calculated the 1,536 dimensional embedding vector (array of floating point numbers) for each of those articles, and stored those vectors in my site’s [[SQLite]] database.
 >
-> Now, if I want to find related articles for a given article, I can calculate the _[[cosine similarity]]_ between the embedding vector for that article and every other article in the database, then return the 10 closest matches by distance.
+> Now, if I want to find related articles for a given article, I can calculate the _[[Cosine Similarity]]_ between the embedding vector for that article and every other article in the database, then return the 10 closest matches by distance.
 >
-> Here’s [the Python function](https://github.com/simonw/llm/blob/bf229945fe57036fa75e8105e59d9e506a720156/llm/__init__.py#L252C1-L256C53) I’m using to calculate those [[cosine similarity]] distances:
+> Here’s [the Python function](https://github.com/simonw/llm/blob/bf229945fe57036fa75e8105e59d9e506a720156/llm/__init__.py#L252C1-L256C53) I’m using to calculate those [[Cosine Similarity]] distances:
 
 ```python
 def cosine_similarity(a, b):

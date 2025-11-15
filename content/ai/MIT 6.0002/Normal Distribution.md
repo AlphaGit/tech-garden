@@ -1,14 +1,16 @@
 ---
 title: Normal Distribution
 tags:
-- ai
-- machine learning
-- courses
-- data science
-- computer science
-- mit ocw
-- mit ocw 6.0002
-- probability
+  - ai
+  - courses
+  - probability
+  - machine_learning
+  - data_science
+  - computer_science
+  - mit_ocw
+  - mit/ocw/6-0002
+date created: 2025-06-22T11:48:36-04:00
+date modified: 2025-11-12T21:15:42-05:00
 ---
 
 Normal distribution:

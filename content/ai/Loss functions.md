@@ -3,6 +3,8 @@ title: Loss functions
 tags:
 - ai
 - machine learning
+date created: 2025-06-22T09:48:36-06:00
+date modified: 2025-11-15T15:57:18-06:00
 ---
 
 Loss functions are metrics of how much different the predictions from a model are to the real values that it should predict.
@@ -16,6 +18,14 @@ $$MSE = \frac{1}{n} \sum^{n}(Y-\hat{Y})^2$$
 ```python
 np.mean((y - y_hat) ** 2)
 ```
+
+## Mean Squared Error with L2 Regularization
+
+Same as above, expect that it also includes the L2 regularization factor.
+
+$$
+\text{MSE}_\text{regularized} = \frac{1}{n} \sum_{i=1}^n (y_i - \hat{y_i})^2 + \lambda \sum_{j=1}^p \beta_j^2
+$$
 
 ## Mean Squared Logarithmic Error (MLE)
 

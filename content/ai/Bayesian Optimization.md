@@ -13,7 +13,7 @@ Among the myriad techniques available, Bayesian optimization has emerged as a su
 
 Hyperparameters are external configurations that govern the training process of machine learning models, distinct from internal parameters like weights or coefficients learned during training. Examples include learning rates, regularization strengths, and architectural choices such as the number of layers in a neural network. Unlike model parameters, hyperparameters cannot be inferred from data and must be set a priori, making their selection a non-trivial optimization problem[^1][^6].
 
-The performance of a model hinges on the careful calibration of these hyperparameters. Suboptimal choices may lead to underfitting, overfitting, or excessive training times, underscoring the necessity of systematic tuning strategies. For instance, a learning rate too high may cause divergence in gradient descent, while one too low may stagnate convergence[^7].
+The performance of a model hinges on the careful calibration of these hyperparameters. Suboptimal choices may lead to underfitting, overfitting, or excessive training times, underscoring the necessity of systematic tuning strategies. For instance, a learning rate too high may cause divergence in [[Gradient Descent|gradient descent]], while one too low may stagnate convergence[^7].
 
 ### Hyperparameter Tuning Methods
 
