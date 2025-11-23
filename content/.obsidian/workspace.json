@@ -11,10 +11,24 @@
             "id": "a7a13abfc8752bd0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "ai/Cyclical Features.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Cyclical Features"
             }
           }
         ]
@@ -199,6 +213,8 @@
   },
   "active": "a7a13abfc8752bd0",
   "lastOpenFiles": [
+    "CyclicalFeatureDayOfWeekUnitCircle.png",
+    "ai/Cyclical Features.md",
     "canada/Who We Are.md",
     "canada/The Oath of Citizenship.md",
     "canada/Rights and Responsibilities of Citizenship.md",
@@ -217,26 +233,22 @@
     "canada",
     "Advertising Technology.md",
     "_index.md",
-    "blender/Workspaces in Blender.md",
-    "blender/UV Mapping.md",
-    "blender/UV Mapping on Globe.png",
-    "blender/Texture exporting.md",
-    "blender/Texture Painting.md",
-    "blender/Supported GPUS.md",
-    "blender/Smart UV Project options.png",
-    "blender/Render on AWS.md",
-    "blender/Layout workspace.png",
-    "blender/Layout Workspace.md",
-    "blender/Graph Editor.png",
-    "blender/Graph Editor.md",
-    "blender/Graph Editor Handle Types.png",
-    "blender/Editor selector.png",
-    "blender/Depth of field visualization.png",
-    "blender/Depth of Field.md",
-    "blender/Blender.md",
-    "blender/Blender output formats.png",
     "blender/Blender 2.79 supported AMD GPUs.png",
-    "blender",
+    "blender/Graph Editor.md",
+    "blender/Depth of Field.md",
+    "blender/Texture Painting.md",
+    "blender/Smart UV Project options.png",
+    "blender/Blender.md",
+    "blender/Workspaces in Blender.md",
+    "blender/Layout workspace.png",
+    "blender/Blender Marketplaces.md",
+    "blender/Depth of field visualization.png",
+    "blender/Animations.md",
+    "blender/Graph Editor Handle Types.png",
+    "blender/Layout Workspace.md",
+    "blender/UV Mapping on Globe.png",
+    "blender/Blender output formats.png",
+    "blender/Graph Editor.png",
     "finance",
     "templates",
     "android",
@@ -244,6 +256,7 @@
     "architecture",
     "ux",
     "mac",
-    "self-improvement"
+    "self-improvement",
+    "math"
   ]
 }
