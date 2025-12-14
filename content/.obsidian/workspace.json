@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "bb717d63e724ad6f",
+        "id": "c9601171ad628caa",
         "type": "tabs",
         "children": [
           {
-            "id": "a7a13abfc8752bd0",
+            "id": "dfc636bdb497660f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ai/Cyclical Features.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Cyclical Features"
+              "title": "New tab"
             }
           }
         ]
@@ -88,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 272.5
+    "width": 236.50260543823242
   },
   "right": {
     "id": "b9973c7a395964d1",
@@ -195,8 +181,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 363.5,
-    "collapsed": true
+    "width": 363.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,10 +196,10 @@
       "smart-connections:Smart Connections: Open random connection": true
     }
   },
-  "active": "a7a13abfc8752bd0",
+  "active": "dfc636bdb497660f",
   "lastOpenFiles": [
-    "CyclicalFeatureDayOfWeekUnitCircle.png",
-    "ai/Cyclical Features.md",
+    "architecture/AWS Extending Volume.md",
+    "architecture/AWS Lambda Runtimes.md",
     "canada/Who We Are.md",
     "canada/The Oath of Citizenship.md",
     "canada/Rights and Responsibilities of Citizenship.md",
@@ -227,28 +212,30 @@
     "canada/Electoral district.md",
     "canada/Discover Canada.md",
     "canada/Constitutional monarchy.md",
-    "canada/Canadian Government Chart.png",
     "canada/British North America Act.md",
+    "canada/Canadian Government Chart.png",
     "canada/Applying for Citizenship.md",
     "canada",
     "Advertising Technology.md",
     "_index.md",
-    "blender/Blender 2.79 supported AMD GPUs.png",
-    "blender/Graph Editor.md",
-    "blender/Depth of Field.md",
-    "blender/Texture Painting.md",
-    "blender/Smart UV Project options.png",
-    "blender/Blender.md",
     "blender/Workspaces in Blender.md",
-    "blender/Layout workspace.png",
-    "blender/Blender Marketplaces.md",
-    "blender/Depth of field visualization.png",
-    "blender/Animations.md",
-    "blender/Graph Editor Handle Types.png",
-    "blender/Layout Workspace.md",
+    "blender/UV Mapping.md",
     "blender/UV Mapping on Globe.png",
-    "blender/Blender output formats.png",
+    "blender/Texture exporting.md",
+    "blender/Texture Painting.md",
+    "blender/Supported GPUS.md",
+    "blender/Smart UV Project options.png",
+    "blender/Render on AWS.md",
+    "blender/Layout workspace.png",
+    "blender/Layout Workspace.md",
     "blender/Graph Editor.png",
+    "blender/Graph Editor.md",
+    "blender/Graph Editor Handle Types.png",
+    "blender/Editor selector.png",
+    "blender/Depth of field visualization.png",
+    "blender/Blender output formats.png",
+    "blender/Blender 2.79 supported AMD GPUs.png",
+    "blender",
     "finance",
     "templates",
     "android",
@@ -256,7 +243,6 @@
     "architecture",
     "ux",
     "mac",
-    "self-improvement",
-    "math"
+    "self-improvement"
   ]
 }
