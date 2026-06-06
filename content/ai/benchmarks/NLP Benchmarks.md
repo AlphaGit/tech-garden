@@ -14,3 +14,4 @@ tags:
 - [[USEB]]
 - [[BEIR]]
 - [[MIRACL]]
+- [[EVA-Bench]]

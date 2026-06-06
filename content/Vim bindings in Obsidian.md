@@ -103,3 +103,4 @@ Commands:
 Sources:
 - [How to use VIM Bindings in Obsidian | Beginners Guide](https://www.youtube.com/watch?v=yX_Qdr9-7kg), Antone Heyward
 - [Learn-Vim](https://github.com/iggredible/Learn-Vim)
+- [Object motions - Vim help](https://vimhelp.org/motion.txt.html#object-motions)
