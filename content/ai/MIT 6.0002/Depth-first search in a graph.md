@@ -1,25 +1,26 @@
 ---
 title: Depth-first search in a graph
 tags:
-- ai
-- machine learning
-- courses
-- data science
-- computer science
-- mit ocw
-- mit ocw 6.0002
-- algorithms
-- trees
-- graphs
+  - ai
+  - machine learning
+  - courses
+  - data science
+  - computer science
+  - mit ocw
+  - mit ocw 6.0002
+  - algorithms
+  - trees
+  - graphs
 ---
 
 # Algorithm
+
 - Start off with initial node
 - Consider all the edges that leave that node, in some order
 - Follow the first edge, and check to see if at goal node
 - If not, repeat the process from new node
 - Continue until either find goal node, or run out of options
-	- When run out of options, backtrack to the previous node and try the next edge, repeating this process
+  - When run out of options, backtrack to the previous node and try the next edge, repeating this process
 
 # Example code
 

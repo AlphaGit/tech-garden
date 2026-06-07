@@ -3,6 +3,7 @@ title: API Gateway
 tags:
   - architecture
 ---
+
 An API gateway acts as a single entry point for client requests. The API gateway is responsible for request routing, composition, and protocol translation. It also provides additional features like authentication, authorization, caching, and rate limiting.
 
 The API Gateway:

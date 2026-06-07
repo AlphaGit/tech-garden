@@ -1,10 +1,10 @@
 ---
 title: pip
 tags:
-- package management
-- pip
-- python
-- snippets
+  - package management
+  - pip
+  - python
+  - snippets
 ---
 
 ## Snippets

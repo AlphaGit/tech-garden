@@ -1,8 +1,8 @@
 ---
 title: Static interfaces
 tags:
-- typescript
-- types
+  - typescript
+  - types
 ---
 
 In Typescript it is possible to define static interfaces and even reference them and pass the classes as objects to be used.
@@ -11,24 +11,24 @@ In Typescript it is possible to define static interfaces and even reference them
 interface IInstance {}
 
 interface IStaticClass {
-  new(): IInstance;
-  start();
-  show();
-  end();
+  new (): IInstance
+  start()
+  show()
+  end()
 }
 
 class StaticMembersClass implements IStaticClass {
-  static start() {};
-  static show() {};
-  static end() {};
+  static start() {}
+  static show() {}
+  static end() {}
 }
 
 // in some code
-function myFunction (staticClass: IStaticClass) {
-  staticClass.start();
+function myFunction(staticClass: IStaticClass) {
+  staticClass.start()
 }
 
-myFunction(StaticMembersClass);
+myFunction(StaticMembersClass)
 ```
 
 Some more info: https://stackoverflow.com/a/43674389/147507

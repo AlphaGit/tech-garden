@@ -5,6 +5,7 @@ tags:
   - programming
   - management
 ---
+
 Technical debt has less to do with the code itself and more about the choices and compromises that emerge from the challenges within software development.[^notreal]
 
 In the realm of software development, the inception of a project is often marked by a paradoxical certainty: we know the least about the project at its beginning. This is an inherent trait, not a flaw, of the developmental process.[^notreal]

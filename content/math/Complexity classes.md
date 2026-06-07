@@ -1,13 +1,13 @@
 ---
 title: Complexity classes
 tags:
-- math
-- complexity
+  - math
+  - complexity
 ---
 
 ## PSPACE-complete
 
-> P is the set of all problems that can be solved in polynomial time, relative to the input. PSPACE is the set of all problems that can be solved with polynomial _space_. It’s assumed, but not proven, that PSPACE is strictly larger than NP. [^1]
+> P is the set of all problems that can be solved in polynomial time, relative to the input. PSPACE is the set of all problems that can be solved with polynomial *space*. It’s assumed, but not proven, that PSPACE is strictly larger than NP. [^1]
 
 ## EXPTIME-complete
 
@@ -34,7 +34,7 @@ tags:
 > A(3) = 3^^3
 > A(4) = 4^^^4
 > etc
-> 
+>
 > Ackermann-complete problems take time growing with O(A(n)). [^1]
 
 ## Hyperackermann-complete

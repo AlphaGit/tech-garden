@@ -8,7 +8,9 @@ tags:
   - ocw
   - machine_learning
 ---
+
 Clustering examples into groups (example of [[Supervised-Unsupervised Learning|Unsupervised learning]]):
+
 - Pick $k$ examples (at random?) as exemplars
 - Cluster remaining samples by minimizing distance between samples in same cluster (objective function) -- put sample in group with closest exemplar
 - Find median example in each cluster as new exemplar

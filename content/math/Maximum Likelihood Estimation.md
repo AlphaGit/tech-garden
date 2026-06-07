@@ -8,6 +8,7 @@ tags:
 aliases:
   - MLE
 ---
+
 A method for estimating the parameters of a statistical model by maximizing the likelihood of the observed data.
 
 $$

@@ -5,6 +5,7 @@ tags:
   - apple
   - command_line
 ---
+
 This command line snippet shows the progress of the internals of the iCloud sync log:
 
 ```bash

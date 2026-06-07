@@ -1,14 +1,14 @@
 ---
 title: How to find the right model
 tags:
-- ai
-- machine learning
-- courses
-- data science
-- computer science
-- mit ocw
-- mit ocw 6.0002
-- probability
+  - ai
+  - machine learning
+  - courses
+  - data science
+  - computer science
+  - mit ocw
+  - mit ocw 6.0002
+  - probability
 ---
 
 An insufficiently complex model won't explain the data well. An overly complex model will overfit the training data.

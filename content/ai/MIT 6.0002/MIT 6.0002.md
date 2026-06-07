@@ -139,6 +139,7 @@ Source: https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinkin
 - [[Features]]
 - [[Minkowski Metric (Distance)]]
 - [[Model metrics]]
+
 # Lecture 12: Clustering
 
 ![[https://www.youtube.com/watch?v=esmzYhuFnds]]

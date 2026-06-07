@@ -1,9 +1,9 @@
 ---
 title: Python cache
 tags:
-- cache
-- python
-- snippets
+  - cache
+  - python
+  - snippets
 ---
 
 `@lru_cache` can be used elegantly to create a cache with a time-to-live, if a time parameter is used to invalidate previous responses:
@@ -55,4 +55,3 @@ def timed_lru_cache(seconds: int, maxsize: int = 128):
 
     return wrapper_cache
 ```
-

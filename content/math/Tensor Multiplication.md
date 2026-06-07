@@ -5,6 +5,7 @@ date modified: 2025-07-13T13:04:34-04:00
 tags:
   - math
 ---
+
 Tensor multiplication is a mixture of different procedures on which tensors can be combined together. Depending on the desired output, several algorithms can be applied.
 
 Most specifically, the tensor product is a bilinear map between pairs of tensors (vector spaces) in the same field[^1]:

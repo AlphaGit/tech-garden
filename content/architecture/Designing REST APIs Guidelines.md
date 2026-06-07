@@ -7,6 +7,7 @@ tags:
   - architecture
   - guidelines
 ---
+
 ## 1. DO Use plural nouns for collections
 
 ```
@@ -123,5 +124,6 @@ POST /products
 X-Idempotency-Key: 123
 ```
 
-[^JeffSnitzer]: [How to (and how not to) design REST APIs](https://github.com/stickfigure/blog/wiki/How-to-(and-how-not-to)-design-REST-APIs), Jeff Snitzer
+[^JeffSnitzer]: [How to (and how not to) design REST APIs](<https://github.com/stickfigure/blog/wiki/How-to-(and-how-not-to)-design-REST-APIs>), Jeff Snitzer
+
 [^JsonVuln]: [Anatomy of a Subtle JSON Vulnerability](https://haacked.com/archive/2008/11/20/anatomy-of-a-subtle-json-vulnerability.aspx/), Haacked

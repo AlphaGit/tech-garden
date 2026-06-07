@@ -1,14 +1,14 @@
 ---
 title: Sampling
 tags:
-- ai
-- machine learning
-- courses
-- data science
-- computer science
-- mit ocw
-- mit ocw 6.0002
-- probability
+  - ai
+  - machine learning
+  - courses
+  - data science
+  - computer science
+  - mit ocw
+  - mit ocw 6.0002
+  - probability
 ---
 
 What about when the experiment is difficult to replicate?

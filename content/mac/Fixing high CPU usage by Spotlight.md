@@ -18,4 +18,3 @@ sudo mdutil -a -i on /
 ```
 
 As a notice, your terminal application will need to have Full Disk Access (from system preferences) in order to delete those spotlight directories.
-

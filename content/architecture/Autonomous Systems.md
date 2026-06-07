@@ -4,6 +4,7 @@ tags:
   - networks
   - architecture
 ---
+
 An Autonomous System (AS) is a network or group of IP networks that are all under the control of a single entity or administration. ASes have clear borders and routing policies.
 
 You can uniquely identify such AS by their autonomous system number assigned by the Internet Assigned Numbers Authority (IANA), an AS Number (ASN).

@@ -1,8 +1,8 @@
 ---
 title: Workspaces in Blender
 tags:
-- workspaces
-- blender
+  - workspaces
+  - blender
 ---
 
 Workspaces are the different layouts in the Blender application that are setup to more efficiently work in different aspects of the [[Rendering workflow]].

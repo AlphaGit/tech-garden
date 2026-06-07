@@ -4,11 +4,13 @@ tags:
   - cache
   - architecture
 ---
+
 ## Caching
 
 Caching is the process of storing copies of files in a temporary storage location, known as a cache. The temporary storage location is faster to access than the underlying slower storage layer. The primary goal of caching is to increase data retrieval performance by reducing the need to access the underlying slower storage layer.
 
 When an order comes through and the food item already exists in the oven, this is called a **cache hit**. When it doesn’t exist, this is a **cache miss**. The success of a cache is quantified by the cache hit ratio, calculated as the number of cache hits divided by the total number of cache requests.
+
 ## Sharding
 
 Distributing the keys of the cache in multiple cache instances. There's usually a function that determines which key goes in which instance. (Hashing.)
@@ -58,7 +60,9 @@ When the cache is down, all requests go directly to the database, putting extra 
 One approach to solve is to setup a circuit breaker for it, so that when the cache is down, the application cannot reach the database directly.
 
 The second approach is to enhance the cache availability with a cluster setup.
+
 ## Cache persistence to disk
+
 ### Write-through strategy
 
 Cache storage strategy where the value is stored in disk and then reported as stored by the cache.
@@ -86,7 +90,7 @@ LFU algorithm removes the least frequently accessed data. Unlike LRU, LFU consid
 This variant of LRU focuses on the time since the data was last updated rather than when it was last accessed. It’s useful in scenarios where the freshness of data is more critical than its access frequency.
 
 ### Random Replacement (RR)
-  
+
 Random Replacement (RR) selects a random item for eviction when the cache is full and needs space for new items.
 
 ## Sources:

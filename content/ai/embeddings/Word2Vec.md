@@ -7,6 +7,7 @@ tags:
   - theory
   - papers
 ---
+
 A type of [[Embeddings|embedding]] for textual data.
 
 > Google Research put out an influential paper 10 years ago describing an early embedding model they created called [[Word2Vec]].
@@ -15,7 +16,7 @@ A type of [[Embeddings|embedding]] for textual data.
 >
 > [[Word2Vec]] is a model that takes single words and turns them into a list of 300 numbers. That list of numbers captures something about the meaning of the associated word.
 >
->\[...]
+> \[...]
 >
 > What’s interesting about this is that it’s not guaranteed that the term “backups” appeared directly in the text of those READMEs. The content is semantically similar to that phrase, but might not be an exact textual match.
 >

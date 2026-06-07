@@ -1,9 +1,9 @@
 ---
 title: Graph Editor (Blender)
 tags:
-- blender
-- graph
-- animations
+  - blender
+  - graph
+  - animations
 ---
 
 The graph editor can be selected from the Editor Selector.

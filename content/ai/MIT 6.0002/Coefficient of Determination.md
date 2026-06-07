@@ -1,14 +1,14 @@
 ---
 title: Coefficient of Determination
 tags:
-- ai
-- machine learning
-- courses
-- data science
-- computer science
-- mit ocw
-- mit ocw 6.0002
-- probability
+  - ai
+  - machine learning
+  - courses
+  - data science
+  - computer science
+  - mit ocw
+  - mit ocw 6.0002
+  - probability
 ---
 
 However, these are relative fits, meaning that they are not absolute in how good the prediction is to the true real data.
@@ -19,7 +19,7 @@ $$
 R^2 = 1 - \frac{\sum_i(y_i-p_i)^2}{\sum_i(y_i-\mu)^2}
 $$
 
-Where $y_i$  are measured values, $p_i$  are predicted values and $\mu$ is the mean of measured values.
+Where $y_i$ are measured values, $p_i$ are predicted values and $\mu$ is the mean of measured values.
 
 The numerator is calculating the error in the estimates. The denominator is calculatin the variuability in the measured data.
 

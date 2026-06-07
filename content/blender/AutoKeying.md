@@ -1,8 +1,8 @@
 ---
 title: AutoKeying
 tags:
-- blender
-- animation
+  - blender
+  - animation
 ---
 
 AutoKeying allows the user to record movements/distorions (rotations, scaling, etc) and have those be automatically keyframed as the timeline progresses in real time.

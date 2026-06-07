@@ -1,9 +1,9 @@
 ---
 title: lighttpd
 tags:
-- tools
-- web
-- http
+  - tools
+  - web
+  - http
 ---
 
 Light HTTP Daemon.

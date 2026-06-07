@@ -1,11 +1,11 @@
 ---
 title: line_profiler
 tags:
-- python
-- pip
-- tools
-- performance
-- profiling
+  - python
+  - pip
+  - tools
+  - performance
+  - profiling
 ---
 
 [line_profiler](https://github.com/pyutils/line_profiler) is a pip package that can be used to profile python code, and get a result with line-by-line execution details.
@@ -34,7 +34,7 @@ Usage:
    kernprof -l box_muller.py
    ```
 
-   This will generate an `lprof`  file that can be analyzed with line_profiler:
+   This will generate an `lprof` file that can be analyzed with line_profiler:
 
 3. Obtain the metrics:
 

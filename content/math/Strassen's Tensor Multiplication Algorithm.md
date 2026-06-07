@@ -3,7 +3,9 @@ title: "Strassen's Tensor Multiplication Algorithm"
 date created: 2025-07-05T20:36:46-04:00
 date modified: 2025-07-05T20:52:16-04:00
 ---
-$$A*B = S^*_C \cdot
+
+$$
+A*B = S^*_C \cdot
 \left[
   \left(
     S^*_A \cdot z(A)
@@ -12,7 +14,8 @@ $$A*B = S^*_C \cdot
   \left(
 	S^*_B \cdot z(B)
   \right)
-\right]$$
+\right]
+$$
 
 where
 
@@ -36,6 +39,7 @@ S^*_C &= \prod_{i=l-1}^{0}{
 
 \end{align}
 $$
+
 and where $I_n$ is the Identity matrix of shape $n \times n$.
 
 > From a computing perspective, naively multiplying together to matrices A and B, each of size n x n, takes O(n³) time. This is accomplished by implementing the formula for matrix multiplication directly on the matrices. For many years, it was assumed that no algorithm could do better than that worst case time.[^1]
@@ -55,8 +59,8 @@ $$
 
 where the $xy$ sub-indices specify which quadrants it refers to, the order being nort-west, south-west, north-east and south-east quadrants.
 
-However, the z-order vectorization is recursive, meaning that the whole matrix will be decomposed in a single vector following that 
+However, the z-order vectorization is recursive, meaning that the whole matrix will be decomposed in a single vector following that
 
-The preparation of each matrix can be done independently, 
+The preparation of each matrix can be done independently,
 
 [^1]: [Demistifying Strassen's Tensor Multiplication Algorithm](https://medium.com/@alex.liu.roc/demystifying-tensor-strassens-algorithm-c1eb5c9a972c), Alex Liu Roc

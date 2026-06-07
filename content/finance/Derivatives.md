@@ -1,8 +1,8 @@
 ---
 title: Derivatives
 tags:
-- finance
-- trading
+  - finance
+  - trading
 ---
 
 Derivatives are similar to futures in the regards that it is a contract that is traded for the speculation on future price of an underlying asset.
@@ -20,9 +20,9 @@ Derivatives are similar to futures in the regards that it is a contract that is 
 **Options**
 
 > On the other hand, options are derivatives that allow an individual to have the right to buy or sell an underlying asset at a given price at the end of the maturity period. However, there are no obligations attached to options contracts. There are two types of options contracts;
-> 
-> -   **A call option:** It gives traders and investors the rights to agree on buying an asset at a specific price and period.
-> -   **A put option:** It provides traders and investors with the rights to agree on selling an asset at a particular price and period.
+>
+> - **A call option:** It gives traders and investors the rights to agree on buying an asset at a specific price and period.
+> - **A put option:** It provides traders and investors with the rights to agree on selling an asset at a particular price and period.
 
 **Perpetual Swaps**
 

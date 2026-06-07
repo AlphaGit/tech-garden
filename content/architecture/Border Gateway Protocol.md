@@ -5,6 +5,7 @@ tags:
   - architecture
   - protocols
 ---
+
 Border Gateway Protocol (BGP) is the core routing protocol that glues the Internet together and allows [[Autonomous Systems]] (AS) to figure out how to transmit a packet from its source to the destination, potentially traversing multiple intermediate ASes along the way. BGP routing works on a path vector basis - ASes inform their neighbours of the routes they know how to reach, and this information propagates across the Internet.
 
 BGP allows ASes to:
@@ -17,6 +18,7 @@ BGP allows ASes to:
   BGP has the flexibility to allow autonomous system administrators to implement their own routing policies.
 - **Add a layer of network security**
   BGP supports security in your network management.
+
 ## Sources
 
 - [Why the Internet Is Both Robust and Fragile](https://blog.bytebytego.com/p/why-the-internet-is-both-robust-and), ByteByteGo NewsLetter

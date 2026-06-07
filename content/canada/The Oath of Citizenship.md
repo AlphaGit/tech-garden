@@ -6,6 +6,7 @@ tags:
   - canada
   - citizenship
 ---
+
 I swear (or affirm)  
 That I will be faithful  
 And bear true allegiance  

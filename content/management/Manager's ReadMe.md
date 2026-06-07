@@ -4,6 +4,7 @@ tags:
   - management
   - documentation
 ---
+
 The "Manager's ReadMe" is a document that outlines how work is done under certain management and what is expected of the people in it.
 
 It helps to set a lot of the tone of the work and the culture in that group.

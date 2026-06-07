@@ -1,8 +1,8 @@
 ---
 tags:
-- snippets
-- ssl
-- bash
+  - snippets
+  - ssl
+  - bash
 title: Downloading SSL certificate from a website
 ---
 

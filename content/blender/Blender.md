@@ -1,11 +1,12 @@
 ---
 title: Blender
 tags:
-- blender
-- rendering
+  - blender
+  - rendering
 ---
 
 ## Table of contents
+
 - [[Workspaces in Blender]]
 - [[Shortcuts]]
 - [[Meshes]]
@@ -14,11 +15,11 @@ tags:
 - [[Animations]]
 - [[animating]]
 - Shading
-	- [[Texture Painting]]
-	- [[UV Mapping]]
+  - [[Texture Painting]]
+  - [[UV Mapping]]
 - Tools
-	- [[Graph Editor]]
+  - [[Graph Editor]]
 - Rendering
-	- [[Supported GPUS]]
-	- [[Depth of Field]]
-	- [[Rendering workflow]]
+  - [[Supported GPUS]]
+  - [[Depth of Field]]
+  - [[Rendering workflow]]

@@ -5,6 +5,7 @@ tags:
   - maps
   - software_tools
 ---
-A free and open source  map of the world, deployable as a single static file on cloud storage.
+
+A free and open source map of the world, deployable as a single static file on cloud storage.
 
 https://protomaps.com/

@@ -8,6 +8,7 @@ tags:
   - papers
   - to_complete
 ---
+
 https://arxiv.org/pdf/2312.00752.pdf
 
 > Many subquadratic-time architectures such as linear attention, gated convolution and recurrent models, and [[Structured State Space Models |structured state space models (SSMs)]] have been developed to address [[Transformers]]’ computational inefficiency on long sequences, but they have not performed as well as attention on important modalities such as language.

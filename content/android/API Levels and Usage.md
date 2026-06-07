@@ -1,11 +1,11 @@
 ---
 title: Android API Levels and Usage
 tags:
-- android
-- native
-- sdk
-- tools
-- websites
+  - android
+  - native
+  - sdk
+  - tools
+  - websites
 ---
 
 The Android API Levels and their usage in the market can be seen in the Android Studio when creating a new project.

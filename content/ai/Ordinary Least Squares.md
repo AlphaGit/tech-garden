@@ -7,6 +7,7 @@ tags:
 aliases:
   - OLS
 ---
+
 A closed-form solution for linear regression obtained using the [[Maximum Likelihood Estimation]] step.
 
 $$

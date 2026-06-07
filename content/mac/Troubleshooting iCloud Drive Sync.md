@@ -5,6 +5,7 @@ tags:
   - troubleshooting
   - iCloud
 ---
+
 ```bash
 log show | grep Cloud | grep Error
 ```
@@ -25,7 +26,7 @@ xcode-select --install
 
 ---
 
-> fileproviderd: \[com.apple.FileProvider:com.apple.CloudDocs.iCloudDriveFileProvider/0{34}9] ┳377cf68 ‼️  done executing \<J1 ‼️  update-item(propagated:\<fcc50 dbver:3 domver:\<nil>> diffs:hidden|evictable|structure) why:itemChangedRemotely sched:utility#1702559433.895729 error:\<NSError: POSIX 13 "The operation couldn’t be completed. Permission denied" >> →  \<requested:\<p:fileID(29725048) n:"_{6}_.py" doc sz:374 m:rw-%<72220581> ct:1670961965.0 mt:1670961965.0>> \[duration 7ms476µs]
+> fileproviderd: \[com.apple.FileProvider:com.apple.CloudDocs.iCloudDriveFileProvider/0{34}9] ┳377cf68 ‼️ done executing \<J1 ‼️ update-item(propagated:\<fcc50 dbver:3 domver:\<nil>> diffs:hidden|evictable|structure) why:itemChangedRemotely sched:utility#1702559433.895729 error:\<NSError: POSIX 13 "The operation couldn’t be completed. Permission denied" >> → \<requested:\<p:fileID(29725048) n:"_{6}_.py" doc sz:374 m:rw-%<72220581> ct:1670961965.0 mt:1670961965.0>> \[duration 7ms476µs]
 
 In my case, some of my files being synced did not belong to my own user (I migrated from another user). This can be fixed by:
 
@@ -77,7 +78,7 @@ mv com.apple.iTunesCloud com.apple.iTunesCloud.bkp
 
 At this point the iCloud UI reports that all files have been synced successfully, but the logs keep reporting errors.
 
-It's possible that some of these sync errors are because of GoogleDrive, which also uses `fileproviderd`,  but for which I refuse to give access to all my hard drive.
+It's possible that some of these sync errors are because of GoogleDrive, which also uses `fileproviderd`, but for which I refuse to give access to all my hard drive.
 
 ---
 

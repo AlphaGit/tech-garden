@@ -1,8 +1,8 @@
 ---
 title: Layout workspace (Blender)
 tags:
-- blender
-- layout
+  - blender
+  - layout
 ---
 
 The layout workspace is the workspace in [[Blender]] where you'd do most of the layout (positioning) work for the different elements that will be part of your final render.

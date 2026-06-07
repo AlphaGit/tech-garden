@@ -6,6 +6,7 @@ tags:
   - ai
   - ai/safety
 ---
+
 A database of community-provided incidents in regards to AI, with proper classification and taxonomy.
 
 https://incidentdatabase.ai/

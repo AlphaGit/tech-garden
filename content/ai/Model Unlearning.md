@@ -3,14 +3,17 @@ title: Model Unlearning
 date created: 2025-10-20T15:48:28-04:00
 date modified: 2025-10-20T16:22:09-04:00
 ---
-*Unlearning* is the re-training of a model to remove some knowledge so that it is not capable of responding to it.
+
+_Unlearning_ is the re-training of a model to remove some knowledge so that it is not capable of responding to it.
 
 It might be motivated by:
+
 - legal necessity (e.g. right to be forgotten)
 - alignment (e.g. prevent dangerous knowledge from being spread)
 - general training (e.g. preventing very common data from being memorized)
 
 [[LLM Benchmarks|Benchmarks]] for unlearning:
+
 - WMDP[^1].
 - TOFU[^8]
 
@@ -20,6 +23,7 @@ It might be motivated by:
 
 **S**harded, **I**solated, **S**liced, and **A**ggregated Training: Trains the original model in smaller composable models through [[Model Ensemble|ensembling]]. The data is partitioned across these individual models.
 ![[SISA Unlearning.png]]
+
 ## Differential Privacy[^4]
 
 Applies noise and clips L2 Norm of per-example gradients for specific parts of the data that wants to be unlearned. The great benefit of this is that it provides a quantifiable demonstration of the unlearning happening, and reduces the impact of the model, as long as the differential (called $(\alpha, \beta)-\text{unlearning}$) are kept low enough to show that impact. This demonstrates the distributional closeness between the original model and the unlearned model, which would be (ideally) equivalent.

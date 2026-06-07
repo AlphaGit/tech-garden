@@ -1,11 +1,11 @@
 ---
 title: API Gateway Mappings
 tags:
-- serverless
-- lambda
-- api gateway
-- cloud
-- aws
+  - serverless
+  - lambda
+  - api gateway
+  - cloud
+  - aws
 ---
 
 ## application/www-form-urlencoded to json
@@ -16,7 +16,7 @@ This API Gateway Model Mapping is useful when our UI is posting a regular form (
 
 ```
 ## convert HTML POST data or HTTP GET query string to JSON
- 
+
 ## get the raw post data from the AWS built-in variable and give it a nicer name
 #if ($context.httpMethod == "POST")
  #set($rawAPIData = $input.path("$"))
@@ -29,23 +29,23 @@ This API Gateway Model Mapping is useful when our UI is posting a regular form (
 #else
  #set($rawAPIData = "")
 #end
- 
+
 ## first we get the number of "&" in the string, this tells us if there is more than one key value pair
 #set($countAmpersands = $rawAPIData.length() - $rawAPIData.replace("&", "").length())
- 
+
 ## if there are no "&" at all then we have only one key value pair.
 ## we append an ampersand to the string so that we can tokenise it the same way as multiple kv pairs.
 ## the "empty" kv pair to the right of the ampersand will be ignored anyway.
 #if ($countAmpersands == 0)
  #set($rawPostData = $rawAPIData + "&")
 #end
- 
+
 ## now we tokenise using the ampersand(s)
 #set($tokenisedAmpersand = $rawAPIData.split("&"))
- 
+
 ## we set up a variable to hold the valid key value pairs
 #set($tokenisedEquals = [])
- 
+
 ## now we set up a loop to find the valid key value pairs, which must contain only one "="
 #foreach( $kvPair in $tokenisedAmpersand )
  #set($countEquals = $kvPair.length() - $kvPair.replace("=", "").length())
@@ -57,7 +57,7 @@ This API Gateway Model Mapping is useful when our UI is posting a regular form (
   #end
  #end
 #end
- 
+
 ## next we set up our loop inside the output structure "{" and "}"
 {
 #foreach( $kvPair in $tokenisedEquals )

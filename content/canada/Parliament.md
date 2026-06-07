@@ -6,6 +6,7 @@ tags:
   - canada
   - politics
 ---
+
 The Parliament of Canada (French: Parlement du Canada) is the federal legislature of Canada. The Crown, along with two chambers: the Senate and the House of Commons, form the bicameral legislature.
 
 The 343 members of the lower house, the House of Commons, are styled as Members of Parliament (MPs), and each elected to represent an [[electoral district]]. The 105 members of the upper house, the Senate, are styled senators and appointed by the [[Governor general]] on the advice of the prime minister. Collectively, MPs and senators are known as parliamentarians.[^2]

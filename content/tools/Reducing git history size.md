@@ -5,6 +5,7 @@ tags:
   - tools
 title: Reducing git history size
 ---
+
 This is an approach that can be use to safely remove chunky git history, when it becomes troublesome for the developers. However, it requires coordination from the whole team consuming this git repository.
 
 ## 1. Cleaning up current state
@@ -22,7 +23,7 @@ Deleting the repository history will make it lighter, but the whole set of commi
 
 ### 2.1. Analyze what to delete
 
-[`git-filter-repo`](https://github.com/newren/git-filter-repo) is an amazing tool that can check the storage used by already deleted files and folders. 
+[`git-filter-repo`](https://github.com/newren/git-filter-repo) is an amazing tool that can check the storage used by already deleted files and folders.
 
 ```bash
 git-filter-repo --analyze
@@ -67,6 +68,6 @@ For each person that needs a copy of the repository:
 
 - Option 1: re-clone repository. This is the best option since it will give them a fresh version of the repository.
 - Option 2: for each branch:
-	- `git fetch -fp`
-	- `git checkout branch`
-	- `git reset --hard origin/branch`
+  - `git fetch -fp`
+  - `git checkout branch`
+  - `git reset --hard origin/branch`

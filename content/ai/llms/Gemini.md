@@ -5,9 +5,11 @@ tags:
   - Google
   - llm
 ---
+
 Gemini is the LLM offering from Google Deepmind.
 
 They claim that it outperforms [[GPT-4]] in 30 out of 32 benchmarks tested, but a recent study ("An In-depth Look at Gemini's Language Abilities"), claims otherwise, where Gemini underperforms [[GPT-3.5]] for most tasks.
+
 ## Sources
 
 - [Gemini Landing Page](https://deepmind.google/technologies/gemini/)

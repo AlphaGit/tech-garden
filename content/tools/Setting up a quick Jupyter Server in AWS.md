@@ -7,11 +7,13 @@ tags:
   - ec2
   - infrastructure
 ---
+
 This guide walks through creating a quick instance of CUDA-enabled Jupyter notebook server using AWS EC2. There are better automated ways of doing this (like SageMaker, or Terraform, CDK, docker, etc), but as a quick first approach, this works.
 
-In my case, I needed a [CUDA-supported GPU](https://developer.nvidia.com/cuda-gpus) attached to the instance, so I chose a  `g5.xlarge`, which is the cheapest I could find to scale later on when the PoC is done.
+In my case, I needed a [CUDA-supported GPU](https://developer.nvidia.com/cuda-gpus) attached to the instance, so I chose a `g5.xlarge`, which is the cheapest I could find to scale later on when the PoC is done.
 
 You might want it in cases where, like me, you need this as a configurable scratch-server that you can use to modify this to your needs. For instance, as a setup with other databases or software to be contained in a single instance.
+
 ## 1. Create instance
 
 Create a Ubuntu-based EC2 instance, start it. Write down the IP address, and the root pass you created for it.

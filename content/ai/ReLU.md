@@ -5,7 +5,8 @@ tags:
   - ai
   - neural_networks
 ---
-[[Activation functions|Activation function]], mostly used in [[neural networks]]. 
+
+[[Activation functions|Activation function]], mostly used in [[neural networks]].
 
 ReLU stands for "Rectified Linear Unit".
 

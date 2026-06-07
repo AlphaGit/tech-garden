@@ -1,9 +1,9 @@
 ---
 title: QR Codes for Wifi access
 tags:
-- tools
-- qr codes
-- wifi
+  - tools
+  - qr codes
+  - wifi
 ---
 
 ([Source](https://blog.jgc.org/2022/07/guest-wifi-using-qr-code.html))

@@ -7,6 +7,7 @@ tags:
   - llm
   - formats
 ---
+
 https://www.improvingagents.com/blog/best-input-data-format-for-llms
 
 Test performed in September 2025 showing that the best format for LLMs to understand data is Markdown-KV:

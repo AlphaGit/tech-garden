@@ -6,11 +6,13 @@ tags:
   - science
   - papers
 ---
+
 Extreme Learning Machines are single hidden-layer feed-forward [[neural networks]]. They are one of the [[neural network]] approaches to timeseries forecasting (opposed to [[statistical timeseries forecasting]]).
 
-Original paper by Hung et al, 2004. 
+Original paper by Hung et al, 2004.
 
 ## Training
+
 The training process consists of these steps:
 
 1. All weights and biases are initialized with random values.
@@ -28,9 +30,11 @@ The tuning of the network will mostly be around its [[Hyperparameters|hyperparam
 - Selection of the distribution for random values used in the initialization step
 
 ## Notes
+
 It is [not as popular as DNN](https://www.researchgate.net/post/Why-Extreme-Learning-machine-is-not-so-popular-as-Deep-Learning) because it still does not reach the accuracy required for non-linear data.
 
 ## Sources
+
 - [Time Series Forecasting with Extreme Learning Machines](https://www.analyticsvidhya.com/blog/2021/12/time-series-forecasting-with-extreme-learning-machines/)
 - [Extreme Learning Machines: Theory and applications](https://www.sciencedirect.com/science/article/abs/pii/S0925231206000385) ([Full PDF](https://web.njit.edu/~usman/courses/cs675_fall20/ELM-NC-2006.pdf))
 - [Exreme Learning Machines for Regression and Multiclass classification](https://ieeexplore.ieee.org/document/6035797)

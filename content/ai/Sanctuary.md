@@ -1,8 +1,8 @@
 ---
 title: Sanctuary
 tags:
-- ai
-- agi
+  - ai
+  - agi
 ---
 
 Sanctuary is a company that has recently received its first round of funding for the purpose of creating AGI.

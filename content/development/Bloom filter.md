@@ -5,14 +5,15 @@ tags:
   - algorithms
   - cache
 ---
+
 Bloom filters are probabilistic data structures: they can test for the non-membership of an element with 100% certainty, but they can't give 100% certainty about the membership of an element.
 
 ```typescript
-let bf = new BloomFilter();
-bf.add("Ant");
-bf.add("Rhino");
-bf.contains("Bear"); // false → we know 100% is not a member
-bf.contains("Rhino"); // true → might or might not be a member
+let bf = new BloomFilter()
+bf.add("Ant")
+bf.add("Rhino")
+bf.contains("Bear") // false → we know 100% is not a member
+bf.contains("Rhino") // true → might or might not be a member
 ```
 
 Bloom filters are popular because of their savings in space.

@@ -10,6 +10,7 @@ tags:
   - voice
   - agents
 ---
+
 End-to-end benchmark for evaluating **voice agents** in realistic enterprise settings, built by ServiceNow-AI.
 
 Website: https://servicenow.github.io/eva
@@ -24,11 +25,11 @@ Every scenario was validated for solvability against three frontier models (Open
 
 ## Domains
 
-| Config | Domain | Scenarios |
-| --- | --- | --- |
-| `airline` | Airline Customer Service Management (CSM) | 50 |
-| `itsm` | Enterprise IT Service Management (ITSM) | 80 |
-| `medical` | Healthcare HR Service Delivery (HRSD) | 83 |
+| Config    | Domain                                    | Scenarios |
+| --------- | ----------------------------------------- | --------- |
+| `airline` | Airline Customer Service Management (CSM) | 50        |
+| `itsm`    | Enterprise IT Service Management (ITSM)   | 80        |
+| `medical` | Healthcare HR Service Delivery (HRSD)     | 83        |
 
 All three require accurate transcription of structured named entities over voice (e.g. confirmation codes and employee identifiers) but differ in their primary challenge and number of tools.
 
@@ -76,4 +77,5 @@ For the full evaluation harness, setup instructions, and contributing guidelines
 - [[HotpotQA]], [[BEIR]], [[MTEB]]
 
 [^EvaData]: [EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios](https://huggingface.co/blog/ServiceNow-AI/eva-bench-data) (ServiceNow-AI, June 4, 2026)
+
 [^EvaPaper]: [EVA-Bench: A New End-to-end Framework for Evaluating Voice Agents](https://arxiv.org/abs/2605.13841) (Bogavelli et al., 2026)

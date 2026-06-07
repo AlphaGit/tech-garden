@@ -8,9 +8,11 @@ tags:
   - ocw
   - machine_learning
 ---
+
 Minkowski Metric:
 
-$$dist(X1, X2, p) = 
+$$
+dist(X1, X2, p) =
 \left(
 	\sum_{k=1}^{len}
 	{

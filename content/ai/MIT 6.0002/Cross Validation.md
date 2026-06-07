@@ -1,14 +1,14 @@
 ---
 title: Cross validation
 tags:
-- ai
-- machine learning
-- courses
-- data science
-- computer science
-- mit ocw
-- mit ocw 6.0002
-- probability
+  - ai
+  - machine learning
+  - courses
+  - data science
+  - computer science
+  - mit ocw
+  - mit ocw 6.0002
+  - probability
 ---
 
 For small datasets, let's use leave-one-out cross-validation. Walk through a number of trials, and for each drop an example from the dataset, fit a model and test it on the left-out datapoint.

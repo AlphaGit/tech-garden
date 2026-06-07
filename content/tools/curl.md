@@ -11,6 +11,7 @@ tags:
 Some less known features of it are:
 
 ## URL templates
+
 **curl** accepts a certain level of "templating" in its URLs:
 
 ```bash
@@ -45,6 +46,7 @@ https://www.google.com/search?q=b&t=10
 However, these will be sequential and executed one at a time. If we wanted to parallelize them, we can make use of the `-P` parameter (that will allow multiple connections), but `curl` needs to be called through [[xargs]].
 
 ## Different options for multiple calls
+
 curl accepts multiple URLs to perform requests:
 
 ```bash
@@ -58,6 +60,7 @@ curl https://www.google.com/search?q=a -: -X 'POST' https://www.google.com/searc
 ```
 
 ## Sources
+
 - [How can I run multiple curl requests processed sequentially?](https://stackoverflow.com/q/3110444/147507)
 - [Download a sequence of files with curl](https://electrictoolbox.com/curl-download-sequence-files/)
 - [How to quickly stress test a web server](https://tweenpath.net/how-to-quickly-stress-test-a-web-server/)

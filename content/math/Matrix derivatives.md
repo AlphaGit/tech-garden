@@ -6,6 +6,7 @@ tags:
   - math
   - matrices
 ---
+
 In these differentiation rules, $X$ is assumed to be a matrix of no particular structure, $A$ is a constant.[^1]
 
 $$

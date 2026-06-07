@@ -6,6 +6,7 @@ tags:
   - probability
   - math
 ---
+
 A standardized value that indicates how many standard deviations a data point is from the mean.
 
 $$

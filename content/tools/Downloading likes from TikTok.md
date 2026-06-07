@@ -7,13 +7,14 @@ tags:
 date created: 2024-08-03T14:22:36-04:00
 date modified: 2024-08-03T14:30:55-04:00
 ---
+
 1. Log in into your TikTok account
 2. Navigate to Settings > Account > Data
 3. Download your data
 4. On Request Data, select your Activity (which includes Likes), and TXT format
 5. Download your data
 6. De-compress the zip file
-7. Extract the links from your  `Activity/Like List.txt`
+7. Extract the links from your `Activity/Like List.txt`
 
 ```bash
 cat ~/Downloads/Tiktok/Activity/Like\ List.txt | grep Link | sed 's/Link:\ //' > list.txt

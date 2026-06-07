@@ -7,11 +7,12 @@ tags:
   - citizenship
   - politics
 ---
+
 [Study Guide – Discover Canada – The Rights and Responsibilities of Citizenship](https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada.html)
 
 ## Table of contents
 
-1. [[Notice]] 
+1. [[Notice]]
 2. [[The Oath of Citizenship]]
 3. [[Message to our readers]]
 4. [[Applying for Citizenship]]

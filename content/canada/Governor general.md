@@ -6,7 +6,8 @@ tags:
   - canada
   - politics
 ---
-The governor general of Canada (French: *gouverneure générale du Canada*) is the federal representative of the Canadian monarch, currently King Charles III. The monarch of Canada is also sovereign and head of state of 14 other Commonwealth realms and resides in the United Kingdom. The monarch, on the advice of his or her Canadian prime minister, appoints a governor general to administer the government of Canada in the monarch's name. 
+
+The governor general of Canada (French: _gouverneure générale du Canada_) is the federal representative of the Canadian monarch, currently King Charles III. The monarch of Canada is also sovereign and head of state of 14 other Commonwealth realms and resides in the United Kingdom. The monarch, on the advice of his or her Canadian prime minister, appoints a governor general to administer the government of Canada in the monarch's name.
 
 The commission is for an indefinite period—known as serving at His Majesty's pleasure—usually five years.
 

@@ -7,6 +7,7 @@ tags:
   - media
   - snippets
 ---
+
 (Inspired by [this post](https://discourse.beets.io/t/download-lyrics-as-separate-file/1707/4))
 
 ```bat
@@ -37,4 +38,3 @@ for /f "tokens=*" %%f in ('beet ls -p') do (
 
 endlocal
 ```
-

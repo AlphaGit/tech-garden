@@ -1,14 +1,14 @@
 ---
 title: Random Walks
 tags:
-- ai
-- machine learning
-- courses
-- data science
-- computer science
-- mit ocw
-- mit ocw 6.0002
-- probability
+  - ai
+  - machine learning
+  - courses
+  - data science
+  - computer science
+  - mit ocw
+  - mit ocw 6.0002
+  - probability
 ---
 
 Random walks are important in many domains, for example, some argue stock market is a random walk, or physical processes (difussion models).
@@ -65,7 +65,7 @@ class Field(object):
 		else:
 			# drunks need to be inmutable so they can be used as keys
 			# in the dictionary
-			self.drunks[drunk] = location 
+			self.drunks[drunk] = location
 
 	def get_location(self, drunk: Drunk):
 		if drunk not in self.drunks:

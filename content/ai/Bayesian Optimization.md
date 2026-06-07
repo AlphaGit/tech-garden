@@ -6,7 +6,9 @@ tags:
   - ai
   - optimization
 ---
-Among the myriad techniques available, Bayesian optimization has emerged as a superior methodology for navigating the complex search spaces of hyperparameters. 
+
+Among the myriad techniques available, Bayesian optimization has emerged as a superior methodology for navigating the complex search spaces of hyperparameters.
+
 ## Context: Hyperparameter Tuning
 
 ### Hyperparameters
@@ -34,9 +36,9 @@ The intuition behind Bayesian optimization can be understood through the followi
 1. **Surrogate Model**: Bayesian optimization uses a probabilistic model, often a Gaussian Process, to approximate the unknown objective function[^19][^21]. This surrogate model learns from previous evaluations and provides estimates of the function's behaviour across the search space.
 2. **Exploration vs. Exploitation**: The core idea is to balance between exploring uncertain regions of the search space and exploiting areas known to have good performance[^20]. This balance is crucial for efficiently finding the global optimum.
 3. **Acquisition Functions**: These are heuristics that guide the search process by determining which point to evaluate next[^20][^21]. Popular acquisition functions include:
-    - Expected Improvement (EI): Selects points with the highest expected improvement over the current best value.
-    - Upper Confidence Bound (UCB): Balances exploration and exploitation by considering both the estimated value and uncertainty.
-    - Probability of Improvement (PI): Chooses points with the highest probability of improving the current best value.
+   - Expected Improvement (EI): Selects points with the highest expected improvement over the current best value.
+   - Upper Confidence Bound (UCB): Balances exploration and exploitation by considering both the estimated value and uncertainty.
+   - Probability of Improvement (PI): Chooses points with the highest probability of improving the current best value.
 4. **Sequential Decision-Making**: Unlike grid or random search, Bayesian optimization makes informed decisions based on all previous evaluations[^22]. Each new evaluation updates the surrogate model, refining our understanding of the objective function.
 5. **Sample Efficiency**: By intelligently selecting points to evaluate, Bayesian optimization can find good solutions with fewer function evaluations compared to other methods[^21][^22]. This is particularly valuable when each evaluation is costly or time-consuming.
 6. **Handling Uncertainty**: The probabilistic nature of the surrogate model allows Bayesian optimization to handle noisy or uncertain objective functions effectively[^19].
@@ -95,27 +97,27 @@ Traditional methods struggle with non-convex objective functions riddled with lo
 
 The `BayesSearchCV` class in scikit-optimize simplifies Bayesian hyperparameter tuning for scikit-learn estimators. Users define a search space using distributions from the `hp` module and configure the optimizer with acquisition functions and cross-validation settings. For example:
 
-```python  
-from skopt import BayesSearchCV  
-from skopt.space import Real, Integer  
+```python
+from skopt import BayesSearchCV
+from skopt.space import Real, Integer
 
-param_space = {  
-    'learning_rate': Real(0.01, 1, prior='log-uniform'),  
-    'max_depth': Integer(3, 10),  
-    'n_estimators': Integer(50, 200)  
-}  
+param_space = {
+    'learning_rate': Real(0.01, 1, prior='log-uniform'),
+    'max_depth': Integer(3, 10),
+    'n_estimators': Integer(50, 200)
+}
 
-optimizer = BayesSearchCV(  
-    estimator=XGBClassifier(),  
-    search_spaces=param_space,  
-    scoring='accuracy',  
-    cv=5,  
-    n_iter=50,  
-    n_jobs=-1  
-)  
+optimizer = BayesSearchCV(
+    estimator=XGBClassifier(),
+    search_spaces=param_space,
+    scoring='accuracy',
+    cv=5,
+    n_iter=50,
+    n_jobs=-1
+)
 
-optimizer.fit(X_train, y_train)  
-print(f"Best parameters: {optimizer.best_params_}")  
+optimizer.fit(X_train, y_train)
+print(f"Best parameters: {optimizer.best_params_}")
 ```
 
 This implementation automates the optimization loop, iteratively refining hyperparameters based on cross-validated performance[^2][^3].
@@ -124,20 +126,20 @@ This implementation automates the optimization loop, iteratively refining hyperp
 
 Optuna enhances Bayesian optimization with advanced features such as pruning, multi-objective optimization, and integration with MLflow for experiment tracking. Its define-by-run API allows dynamic construction of search spaces, accommodating conditional hyperparameters (e.g., layer sizes dependent on network depth). A typical Optuna study for a neural network might involve:
 
-```python  
-import optuna  
+```python
+import optuna
 
-def objective(trial):  
-    n_layers = trial.suggest_int('n_layers', 1, 5)  
-    layers = []  
-    for i in range(n_layers):  
-        layers.append(trial.suggest_int(f'n_units_{i}', 32, 256))  
-    lr = trial.suggest_float('lr', 1e-4, 1e-2, log=True)  
-    model = build_model(layers, lr)  
-    return evaluate_model(model)  
+def objective(trial):
+    n_layers = trial.suggest_int('n_layers', 1, 5)
+    layers = []
+    for i in range(n_layers):
+        layers.append(trial.suggest_int(f'n_units_{i}', 32, 256))
+    lr = trial.suggest_float('lr', 1e-4, 1e-2, log=True)
+    model = build_model(layers, lr)
+    return evaluate_model(model)
 
-study = optuna.create_study(direction='maximize')  
-study.optimize(objective, n_trials=100)  
+study = optuna.create_study(direction='maximize')
+study.optimize(objective, n_trials=100)
 ```
 
 Optuna’s `TPESampler` (Tree-structured Parzen Estimator) efficiently balances exploration and exploitation, often outperforming standard Gaussian processes in high-dimensional spaces[^1][^4].
@@ -219,4 +221,3 @@ AutoML platforms leverage Bayesian optimization to automate feature engineering,
 [^24]: https://www.linkedin.com/pulse/intuition-behind-bayesian-optimisation-arijit-chakrabarti
 
 [^25]: https://www.linkedin.com/pulse/machine-learning-intuition-bayesian-optimization-chen-yang
-

@@ -1,9 +1,9 @@
 ---
 title: Render on AWS
 tags:
-- blender
-- rendering
-- aws
+  - blender
+  - rendering
+  - aws
 ---
 
 Create a p2.xlarge instance, which I found is the best balance between performance and price. Make sure it's ubuntu based.

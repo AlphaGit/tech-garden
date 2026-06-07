@@ -6,6 +6,7 @@ tags:
   - performance
   - profiling
 ---
+
 There are several [[IPython Notebook magic commands]] that are specially helpful at the moment of profiling code.
 
 `%timeit` for line-magic and `%%timeit` for cell-magic is one of them. It can be used to time the repeated execution of snippets of code. It automatically does a large number of repetitions. For slower commands, `%timeit` will automatically adjust and perform fewer repetitions.
@@ -26,7 +27,7 @@ Python contains a built-in code profiler (which you can read about in the Python
 
 It will do a line-by-line profiling of the specified function.
 
-In a similar fashion, `%memit` and `%mprun` can be used to do memory profiling, in the same fashion that we did speed profiling. `%memit` offers a memory-measuring equivalent of `%timeit` `%mprun` offers a memory-measuring equivalent of `%lprun`. They are also an external extension, so it needs to be installed and loaded. 
+In a similar fashion, `%memit` and `%mprun` can be used to do memory profiling, in the same fashion that we did speed profiling. `%memit` offers a memory-measuring equivalent of `%timeit` `%mprun` offers a memory-measuring equivalent of `%lprun`. They are also an external extension, so it needs to be installed and loaded.
 
 `%load_ext memory_profiler`
 

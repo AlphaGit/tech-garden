@@ -5,6 +5,7 @@ date modified: 2025-11-15T16:28:20-06:00
 tags:
   - machine_learning
 ---
+
 $$
 \min_{w,b} \frac{1}{2} \parallel w \parallel^2 +
 C \sum_{i=1}^n \max

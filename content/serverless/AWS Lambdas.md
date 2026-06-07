@@ -1,10 +1,10 @@
 ---
 title: AWS Lambdas
 tags:
-- serverless
-- lambda
-- aws
-- cloud
+  - serverless
+  - lambda
+  - aws
+  - cloud
 ---
 
 AWS Lambdas can be exposed and invoked through:

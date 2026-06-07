@@ -6,6 +6,7 @@ tags:
   - snippets
   - sql
 ---
+
 This snippet shows the locks currently present in the database for a specific table of a specific namespace. By changing the filters you can see all the locks that are not restricted to tables.
 
 ```sql

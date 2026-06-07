@@ -6,6 +6,7 @@ tags:
   - ai
   - machine_learning
 ---
+
 $$
 \text{similarity} = \frac{A \cdot B}{\parallel A \parallel \space \parallel B \parallel}
 $$

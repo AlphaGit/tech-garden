@@ -1,14 +1,14 @@
 ---
 title: Brute force for an optimization problem
 tags:
-- ai
-- machine learning
-- courses
-- data science
-- computer science
-- mit ocw
-- mit ocw 6.0002
-- algorithms
+  - ai
+  - machine learning
+  - courses
+  - data science
+  - computer science
+  - mit ocw
+  - mit ocw 6.0002
+  - algorithms
 ---
 
 1. Generate all possible combinations (power set).

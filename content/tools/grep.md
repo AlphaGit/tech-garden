@@ -11,4 +11,3 @@ Find a string in all files of a folder ([source](https://stackoverflow.com/a/139
 ```bash
 grep -nr '<string>' .
 ```
-

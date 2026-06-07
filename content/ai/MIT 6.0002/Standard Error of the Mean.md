@@ -1,14 +1,14 @@
 ---
 title: Standard Error of the Mean
 tags:
-- ai
-- machine learning
-- courses
-- data science
-- computer science
-- mit ocw
-- mit ocw 6.0002
-- probability
+  - ai
+  - machine learning
+  - courses
+  - data science
+  - computer science
+  - mit ocw
+  - mit ocw 6.0002
+  - probability
 ---
 
 For times where we can only get a sample (like political polls), we can exploit the third aspect of the [[Central Limit Theorem|Central Limit Theorem]]:
@@ -19,6 +19,7 @@ This allows us to calculate the _Standard Error of the Mean (SEM or SE)_.
 
 $$SE = \frac{\sigma}{\sqrt{n}}$$
 Where:
+
 - $\sigma$: Standard deviation of the population
 - $n$, size of the sample
 

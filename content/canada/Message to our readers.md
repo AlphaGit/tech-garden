@@ -6,6 +6,7 @@ tags:
   - canada
   - citizenship
 ---
+
 > For 400 years, settlers and immigrants have contributed to the diversity and richness of our country.[^1]
 
 > Canada is a [[constitutional monarchy]], a [[Parliamentary democracy]] and a [[federal state]]. Canadians are bound together by a shared commitment to the rule of law and to the institutions of [[Parliamentary democracy|parliamentary government]].[^1]

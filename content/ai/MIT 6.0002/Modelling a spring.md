@@ -1,17 +1,18 @@
 ---
 title: Modelling a spring
 tags:
-- ai
-- machine learning
-- courses
-- data science
-- computer science
-- mit ocw
-- mit ocw 6.0002
-- probability
+  - ai
+  - machine learning
+  - courses
+  - data science
+  - computer science
+  - mit ocw
+  - mit ocw 6.0002
+  - probability
 ---
 
 Modelling a spring:
+
 - They can stretch or compress when a force is applied to them
 - They can later go back to their original form
 - The amount of force varies linearly with the distance

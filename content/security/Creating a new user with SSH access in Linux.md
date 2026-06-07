@@ -1,10 +1,10 @@
 ---
 title: Creating a new user with SSH access in Linux
 tags:
-- ssh
-- security
-- linux
-- bash
+  - ssh
+  - security
+  - linux
+  - bash
 ---
 
 Create a user and give it a password that expires, so that they can change it when they login:

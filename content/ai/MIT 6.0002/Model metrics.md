@@ -8,6 +8,7 @@ tags:
   - ocw
   - machine_learning
 ---
+
 During the construction of the model we might need to make design choices about which kinds of error the model will make, like prioritizing minimizing false positives.
 
 Accuracy: measure of how many instances the model got right.

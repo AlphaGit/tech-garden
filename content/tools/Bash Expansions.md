@@ -4,6 +4,7 @@ tags:
   - command_line
   - bash
 ---
+
 ```bash
 variable="value"
 echo ${variable} # → value

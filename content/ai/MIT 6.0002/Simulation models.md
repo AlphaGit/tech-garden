@@ -1,14 +1,14 @@
 ---
 title: Simulation models
 tags:
-- ai
-- machine learning
-- courses
-- data science
-- computer science
-- mit ocw
-- mit ocw 6.0002
-- probability
+  - ai
+  - machine learning
+  - courses
+  - data science
+  - computer science
+  - mit ocw
+  - mit ocw 6.0002
+  - probability
 ---
 
 A description of computations that provide useful information about the possible behaviours of a system being modeled. They're descriptive and not prescriptive (opposed to [[Optimization models|Optimization models]]).

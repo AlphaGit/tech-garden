@@ -7,8 +7,9 @@ tags:
   - ux
   - links
 ---
+
 Here are some nice places where one can find fonts:
 
 - [Font Source](https://fontsource.org/)
-	- Version locked
+  - Version locked
 - [Google Fonts](https://fonts.google.com/)

@@ -1,13 +1,13 @@
 ---
 title: Computer models
 tags:
-- ai
-- machine learning
-- courses
-- data science
-- computer science
-- mit ocw
-- mit ocw 6.0002
+  - ai
+  - machine learning
+  - courses
+  - data science
+  - computer science
+  - mit ocw
+  - mit ocw 6.0002
 ---
 
 Help us simplify and explain how something works, or predict how something in the future.

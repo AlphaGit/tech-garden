@@ -4,7 +4,8 @@ tags:
   - protocols
   - standards
 ---
-JSON Web Tokens (JWT) allows to transmit data between parties providing security in forms of [[authenticity]], [[confidentiality]] and [[integrity]]. 
+
+JSON Web Tokens (JWT) allows to transmit data between parties providing security in forms of [[authenticity]], [[confidentiality]] and [[integrity]].
 
 It contains a list of claims in the shape of key-value pairs that are either encoded using [[JSON Web Signature|JSON Web Signature (JWS)]] or [[JSON Web Encryption|JSON Web Encryption (JWE)]].
 
@@ -26,8 +27,8 @@ The header contains information about the overall JWT, such as the main algorith
 
 ```json
 {
-    "alg": "HS256",
-    "typ": "JWT"
+  "alg": "HS256",
+  "typ": "JWT"
 }
 ```
 
@@ -79,6 +80,7 @@ During verification, the recipient generates a new signature with the secret tha
 - **Use secure libraries:** Utilize well-established libraries and frameworks for creating, parsing, and verifying JWTs.
 - **Implement token expiry:** Set a reasonable expiration time for JWTs. Shorter expiration times can enhance [API security](https://www.postman.com/api-platform/api-security/) by reducing the window of opportunity for misuse if a token is compromised. If the JWT is an access token, consider pairing it with a long-lived refresh token.
 - **Implement a blacklisting mechanism:** Since JWTs are stateless and self-contained, invalidating sessions or preventing misuse on leaks needs a blacklisting mechanism so that living tokens can be disregarded.
+
 ## Sources
 
 - [JSON Web Tokens (JWT)](https://www.iana.org/assignments/jwt/jwt.xhtml), IANA

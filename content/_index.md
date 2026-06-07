@@ -1,8 +1,8 @@
 ---
 title: Alpha's Tech Garden
 tags:
-- index
-- introduction
+  - index
+  - introduction
 enableToc: false
 ---
 
@@ -20,4 +20,4 @@ Because a "blog" feels like it needs to have some research and finished idea beh
 
 Also, because it's really cool to see it all in a graph~
 
-Use the **Explorer** on the left, or use the search (`Ctrl+K`  or `Cmd+K`) and input any text your heart desires.
+Use the **Explorer** on the left, or use the search (`Ctrl+K` or `Cmd+K`) and input any text your heart desires.

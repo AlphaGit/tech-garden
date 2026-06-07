@@ -1,9 +1,9 @@
 ---
 title: Supported GPUs
 tags:
-- blender
-- rendering
-- gpus
+  - blender
+  - rendering
+  - gpus
 ---
 
 Up to Blender 2.70, these are the GPUs that are supported to be used with the Cycles / Eevee renderer.

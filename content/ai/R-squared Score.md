@@ -7,6 +7,7 @@ tags:
 aliases:
   - R2 Score
 ---
+
 A statistical measure that represents the proportion of variance explained by a regression model
 
 $$

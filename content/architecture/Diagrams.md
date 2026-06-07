@@ -5,6 +5,7 @@ tags:
   - architecture
   - tools
 ---
+
 [Diagrams](https://github.com/mingrammer/diagrams) is a python project that can be used to generate architectural or system design diagrams from python code.
 
 As an example, executing the following code will generate and show the following image:

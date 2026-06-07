@@ -1,13 +1,13 @@
 ---
 title: Graphs
 tags:
-- ai
-- machine learning
-- courses
-- data science
-- computer science
-- mit ocw
-- mit ocw 6.0002
+  - ai
+  - machine learning
+  - courses
+  - data science
+  - computer science
+  - mit ocw
+  - mit ocw 6.0002
 ---
 
 **Nodes** (vertices) and **edges** (arcs). Nodes are elements in the systems. Edges are connections between them.

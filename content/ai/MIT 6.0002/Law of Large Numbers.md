@@ -1,14 +1,14 @@
 ---
 title: Law of Large Numbers
 tags:
-- ai
-- machine learning
-- courses
-- data science
-- computer science
-- mit ocw
-- mit ocw 6.0002
-- probability
+  - ai
+  - machine learning
+  - courses
+  - data science
+  - computer science
+  - mit ocw
+  - mit ocw 6.0002
+  - probability
 ---
 
 More simulations (a larger sample) usually drives the [[Variance|variance]] down, which is why we have a better [[Confidence intervals|confidence]] in the results. This is the Law of Large numebrs:

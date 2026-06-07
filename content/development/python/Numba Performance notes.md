@@ -6,6 +6,7 @@ tags:
   - profiling
   - numba
 ---
+
 [[numba]] includes the following notes which are useful to profiling and identifying which things can be the cause of low performance on an execution:
 
 [Supported Python Features](https://numba.readthedocs.io/en/stable/reference/pysupported.html): contains documentation on which features from [[python]] can be used directly by Numba.

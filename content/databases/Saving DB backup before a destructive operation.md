@@ -6,6 +6,7 @@ tags:
   - snippets
   - sql
 ---
+
 Here's a quick and easy way to. store information in a backup table before making any destructive action:
 
 ```sql
@@ -23,4 +24,3 @@ delete
 from test
 where test."value" = 1
 ```
-

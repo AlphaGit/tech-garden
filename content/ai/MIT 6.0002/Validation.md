@@ -1,14 +1,14 @@
 ---
 title: Validation
 tags:
-- ai
-- machine learning
-- courses
-- data science
-- computer science
-- mit ocw
-- mit ocw 6.0002
-- probability
+  - ai
+  - machine learning
+  - courses
+  - data science
+  - computer science
+  - mit ocw
+  - mit ocw 6.0002
+  - probability
 ---
 
 We also want to be able to predict, so in order to verify it, we'll give it data from the source of the data that it has not seen when generating the model.

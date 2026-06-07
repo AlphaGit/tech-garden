@@ -1,9 +1,9 @@
 ---
 title: Time Weighted Return
 tags:
-- finance
-- metrics
-- investments
+  - finance
+  - metrics
+  - investments
 ---
 
 Method of calculation to account for external flows in a portfolio (deposits, withdrawals). It does so by considering internal timeframes and calculating the return in each timeframe, then compounding them together.
@@ -13,7 +13,7 @@ Method of calculation to account for external flows in a portfolio (deposits, wi
 $${1+R={\frac {M_{1}-C_{1}}{M_{0}}}\times {\frac {M_{2}-C_{2}}{M_{1}}}\times {\frac {M_{3}-C_{3}}{M_{2}}}\times \cdots \times {\frac {M_{n-1}-C_{n-1}}{M_{n-2}}}\times {\frac {M_{n}-C_{n}}{M_{n-1}}}}$$
 where
 
-$R$ is the _time-weighted return_ of the portfolio,
+$R$ is the *time-weighted return* of the portfolio,
 
 $M_{0}$ is the initial portfolio value,
 

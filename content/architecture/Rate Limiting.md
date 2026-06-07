@@ -1,9 +1,10 @@
 ---
 title: Rate Limiting
 tags:
-- rate limiting
-- architecture
+  - rate limiting
+  - architecture
 ---
+
 ## Concepts
 
 **Fail Open**: strategy for rate limiters to let all transactions go through when they are not available. It has the benefit of not stopping legitimate requests, but they could overwhelm the underlying system if they suffer an amount of requests bigger than they can handle.
@@ -21,4 +22,5 @@ Rate limiters should always provide clear rejection messages, so that clients kn
 Consider dark-launching rate limiters before activating them. They should just log which requests would be rejected and from that analysis, you can understand if they're going to work correctly.
 
 ## Sources
+
 - [Rate Limiter for the Real World](https://blog.bytebytego.com/p/rate-limiter-for-the-real-world), ByteByteGo Newsletter

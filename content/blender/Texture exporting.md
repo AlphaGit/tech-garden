@@ -1,8 +1,8 @@
 ---
 title: Texture exporting
 tags:
-- blender
-- texturing
+  - blender
+  - texturing
 ---
 
 Different formats have different ways, but for [[OBJ]] and [[FBX]] exports (what I needed) with textures, not only you'll need the file itself, but also the texture files (images, if any), and, alternatively, a material files that maps between the two of them.

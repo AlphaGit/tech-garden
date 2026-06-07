@@ -1,13 +1,13 @@
 ---
 title: Quickly Creating a Production-Ready API Using FastAPI and Docker… Explained with Memes (DockerCon 2022 notes)
 tags:
-- conference
-- docker
-- dockercon
-- fastapi
-- python
-- api
-- dockercon2022
+  - conference
+  - docker
+  - dockercon
+  - fastapi
+  - python
+  - api
+  - dockercon2022
 ---
 
 Notes from https://docker.events.cube365.net/dockercon/2022/content/Videos/FznJCYerdb9Za3W9Q
@@ -87,15 +87,18 @@ It will also tells us exactly where the error was (see `detail[].loc`)
 
 ```json
 {
-  "detail": [{
-    "loc": [ "body", "orders", 2, "ingredients", 1 ],
-    "msg": "str type unexpected",
-    "type": "type_error.str"
-  }, {
-    "loc": [ "body", "orders", 3, "name" ],
-    "msg": "field required",
-    "type": "value_error.missing"
-  }]
+  "detail": [
+    {
+      "loc": ["body", "orders", 2, "ingredients", 1],
+      "msg": "str type unexpected",
+      "type": "type_error.str"
+    },
+    {
+      "loc": ["body", "orders", 3, "name"],
+      "msg": "field required",
+      "type": "value_error.missing"
+    }
+  ]
 }
 ```
 
@@ -133,4 +136,3 @@ Other features:
 - Files
 - Background Tasks
 - Easy GraphQL integration
-

@@ -5,16 +5,17 @@ tags:
   - statistics
   - variance
 ---
+
 The [[standard deviation]] is defined as the root square of the variance:
 
 > $$s^2 = \frac{\sum_{i=1}^N{\left(x_i-\bar{x}\right)^2}}{N-1}$$
-> $$s = \sqrt{s^2}$$ 
+> $$s = \sqrt{s^2}$$
 > The definition can be converted directly into an algorithm that computes the variance and standard deviation in two passes: compute the mean in one pass over the data, and then do a second pass to compute the squared differences from the mean.
-> 
+>
 > \[...]
-> 
+>
 > **Welford’s method** is a usable single-pass method for computing the variance. It can be derived by looking at the differences between the sums of squared differences for N and N-1 samples
-> 
+>
 > \[...]
 > $$\left(x_N-\bar{x}_N\right)\left(x_N-\bar{x}_{N-1}\right)$$
 >
@@ -31,9 +32,10 @@ variance(samples):
     S := S + (x-M)*(x-oldM)
   return S/(N-1)
 ```
+
 [^1]
 
-> The algorithm can be extended to handle unequal sample weights, replacing the simple counter _n_ with the sum of weights seen so far. West suggests this incremental algorithm:
+> The algorithm can be extended to handle unequal sample weights, replacing the simple counter *n* with the sum of weights seen so far. West suggests this incremental algorithm:
 
 ```python
 def weighted_incremental_variance(data_weight_pairs):
@@ -53,8 +55,11 @@ def weighted_incremental_variance(data_weight_pairs):
     # Reliability weights
     sample_reliability_variance = S / (w_sum - w_sum2 / w_sum)
 ```
+
 [^2]
+
 ## Sources:
 
 [^1]: https://jonisalonen.com/2013/deriving-welfords-method-for-computing-variance/
+
 [^2]: https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance
